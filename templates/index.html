@@ -1,52 +1,162 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>PDF Theorem / Definition Extractor</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <style>
-    body { font-family: system-ui, Arial, sans-serif; margin: 24px; color:#111; }
-    .card { border:1px solid #e5e5e5; border-radius:12px; padding:16px; max-width:820px; }
-    .row { display:flex; gap:12px; flex-wrap:wrap; align-items:center; }
-    .btn { padding:10px 14px; border-radius:8px; border:1px solid #ccc; background:#fff; cursor:pointer; text-decoration:none; color:#111; }
-    .btn-primary { background:#111; color:#fff; border-color:#111; }
-    .muted { color:#666; font-size:14px; }
-    input[type=file] { padding:6px; }
-    .flash { margin-bottom:12px; padding:10px; border-radius:8px; background:#fff7ed; border:1px solid #fed7aa; color:#9a3412; }
-  </style>
+    <meta charset="UTF-8">
+    <title>Math PDF Uploader</title>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 30px;
+            background: #fafafa;
+        }
+
+        h1 {
+            margin-bottom: 10px;
+        }
+
+        button {
+            padding: 8px 14px;
+            font-size: 14px;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+
+        .top-actions {
+            margin-bottom: 20px;
+        }
+
+        #progress-container {
+            display: none;
+            margin-top: 25px;
+            max-width: 600px;
+        }
+
+        #progress-outer {
+            width: 100%;
+            background: #e0e0e0;
+            height: 26px;
+            border-radius: 6px;
+            overflow: hidden;
+        }
+
+        #progress-bar {
+            height: 100%;
+            width: 0%;
+            background: #4caf50;
+            text-align: center;
+            color: white;
+            line-height: 26px;
+            font-size: 14px;
+            transition: width 0.2s ease;
+        }
+
+        #progress-text {
+            margin-top: 8px;
+            font-size: 14px;
+        }
+
+        .hint {
+            margin-top: 10px;
+            font-size: 13px;
+            color: #555;
+        }
+    </style>
 </head>
 <body>
 
-<h1>PDF Theorem / Definition Extractor</h1>
-<p class="muted">
-  Upload a PDF. The app extracts theorem-like blocks (theorem, lemma, definition, etc.)
-  and lets you save them permanently.
+<h1>Upload Mathematics PDFs</h1>
+
+<div class="top-actions">
+    <a href="{{ saved_url }}">
+        <button>View All Saved</button>
+    </a>
+</div>
+
+<p>
+    Select one or more PDF files. Large selections will be processed in batches.
 </p>
 
-{% with messages = get_flashed_messages() %}
-  {% for m in messages %}
-    <div class="flash">{{ m }}</div>
-  {% endfor %}
-{% endwith %}
+<input type="file" id="fileInput" multiple accept=".pdf">
+<br><br>
 
-<div class="card">
-  <form action="{{ url_for('upload') }}" method="post" enctype="multipart/form-data">
-    <div class="row">
-      <div>
-        <label>PDF file</label><br>
-        <input type="file" name="file" accept="application/pdf" required>
-      </div>
+<button onclick="startUpload()">Upload & Process</button>
 
-      <div style="margin-top:18px;">
-        <button class="btn btn-primary" type="submit">Extract</button>
-      </div>
-
-      <div style="margin-top:18px;">
-        <a class="btn" href="{{ saved_url }}">View Saved ({{ saved_count }})</a>
-      </div>
+<div id="progress-container">
+    <div id="progress-outer">
+        <div id="progress-bar">0%</div>
     </div>
-  </form>
+    <div id="progress-text"></div>
 </div>
+
+<p class="hint">
+    Tip: You can upload thousands of PDFs — they will be processed safely in batches.
+</p>
+
+<script>
+/*
+  Smaller = safer but slower.
+*/
+const BATCH_SIZE = 20;
+
+async function startUpload() {
+    const input = document.getElementById("fileInput");
+    const files = Array.from(input.files);
+
+    if (files.length === 0) {
+        alert("No files selected.");
+        return;
+    }
+
+    const batchId = crypto.randomUUID();
+
+    const progressContainer = document.getElementById("progress-container");
+    const progressBar = document.getElementById("progress-bar");
+    const progressText = document.getElementById("progress-text");
+
+    progressContainer.style.display = "block";
+    progressBar.style.width = "0%";
+    progressBar.textContent = "0%";
+
+    let processed = 0;
+
+    for (let i = 0; i < files.length; i += BATCH_SIZE) {
+        const batch = files.slice(i, i + BATCH_SIZE);
+        const formData = new FormData();
+
+        formData.append("batch_id", batchId);
+        batch.forEach(f => formData.append("files", f));
+
+        let response;
+        try {
+            response = await fetch("/upload", {
+                method: "POST",
+                body: formData
+            });
+        } catch (err) {
+            alert("Network error during upload.");
+            return;
+        }
+
+        if (!response.ok) {
+            alert("Upload failed during batch processing.");
+            return;
+        }
+
+        const data = await response.json();
+        processed += data.processed || batch.length;
+
+        const percent = Math.round((processed / files.length) * 100);
+        progressBar.style.width = percent + "%";
+        progressBar.textContent = percent + "%";
+        progressText.textContent =
+            `Processed ${processed} / ${files.length} PDFs`;
+    }
+
+    // Go to combined results page
+    window.location.href = `/upload_complete/${batchId}`;
+}
+</script>
 
 </body>
 </html>

@@ -419,63 +419,75 @@ def index():
 
 @app.route("/upload", methods=["POST"])
 def upload():
-    if "file" not in request.files:
-        flash("No file provided.")
-        return redirect(url_for("index"))
+    """
+    Process ONE BATCH of files.
+    Returns JSON with progress info.
+    """
+    if "files" not in request.files:
+        return {"error": "No files provided"}, 400
 
-    f = request.files["file"]
-    if f.filename == "":
-        flash("No file selected.")
-        return redirect(url_for("index"))
+    files = request.files.getlist("files")
+    if not files:
+        return {"error": "Empty batch"}, 400
 
-    if not allowed_file(f.filename):
-        flash("Please upload a PDF.")
-        return redirect(url_for("index"))
+    batch_id = request.form.get("batch_id")
+    if not batch_id:
+        return {"error": "Missing batch_id"}, 400
 
-    job_id = uuid.uuid4().hex
-    upload_path = UPLOAD_DIR / f"{job_id}.pdf"
-    f.save(str(upload_path))
+    combined_hits = []
+    saved_map = {}
 
-    try:
-        zoom = float(request.form.get("zoom", "2.0"))
-    except ValueError:
-        zoom = 2.0
+    for f in files:
+        if f.filename == "" or not allowed_file(f.filename):
+            continue
 
-    try:
-        pad = float(request.form.get("pad", "10.0"))
-    except ValueError:
-        pad = 10.0
+        job_id = uuid.uuid4().hex
+        upload_path = UPLOAD_DIR / f"{job_id}.pdf"
+        f.save(str(upload_path))
 
-    out_dir = OUTPUT_DIR / job_id
-    out_dir.mkdir(parents=True, exist_ok=True)
+        out_dir = OUTPUT_DIR / job_id
+        out_dir.mkdir(parents=True, exist_ok=True)
 
-    try:
-        hits = extract_env_snaps(upload_path, out_dir, zoom=zoom, pad=pad)
-    except Exception as e:
-        flash(f"Failed to process PDF: {e}")
-        return redirect(url_for("index"))
+        try:
+            hits = extract_env_snaps(upload_path, out_dir)
+        except Exception as e:
+            continue
 
-    # Catalog JSON (used by save route to know keywords, page, etc.)
-    catalog_path = out_dir / "catalog.json"
-    catalog_path.write_text(json.dumps([asdict(h) for h in hits], ensure_ascii=False, indent=2), encoding="utf-8")
+        catalog_path = out_dir / "catalog.json"
+        catalog_path.write_text(
+            json.dumps([asdict(h) for h in hits], ensure_ascii=False, indent=2),
+            encoding="utf-8",
+        )
 
-    # ZIP
-    zip_bytes = make_zip_of_folder(out_dir)
-    (OUTPUT_DIR / f"{job_id}.zip").write_bytes(zip_bytes)
+        for h in hits:
+            h.source_pdf = f.filename
+            h.job_id = job_id
+            combined_hits.append(h)
+            saved_map[(job_id, h.image_file)] = is_saved(job_id, h.image_file)
 
-    # Mark which items are already saved (so templates can show "Saved" state)
-    saved_map = {h.image_file: is_saved(job_id, h.image_file) for h in hits}
+    # Persist batch results so later batches accumulate
+    batch_store = OUTPUT_DIR / f"batch_{batch_id}.json"
+    existing = []
+    if batch_store.exists():
+        existing = json.loads(batch_store.read_text(encoding="utf-8"))
 
-    return render_template(
-        "results.html",
-        job_id=job_id,
-        total=len(hits),
-        hits=hits,
-        zoom=zoom,
-        pad=pad,
-        saved_map=saved_map,
-        saved_url=url_for("view_saved"),
-    )
+    for h in combined_hits:
+        existing.append({
+            "job_id": h.job_id,
+            "start_page": h.start_page,
+            "header": h.header,
+            "image_file": h.image_file,
+        })
+
+    batch_store.write_text(json.dumps(existing, ensure_ascii=False, indent=2), encoding="utf-8")
+
+    return {
+        "status": "ok",
+        "processed": len(files),
+        "total_hits": len(existing),
+    }
+
+
 
 
 @app.route("/snaps/<job_id>/<filename>", methods=["GET"])
@@ -666,6 +678,79 @@ def results_page(job_id: str):
         saved_map=saved_map,
         saved_url=url_for("view_saved"),
     )
+@app.route("/upload_complete/<batch_id>", methods=["GET"])
+def upload_complete(batch_id: str):
+    batch_store = OUTPUT_DIR / f"batch_{batch_id}.json"
+    if not batch_store.exists():
+        flash("Batch results not found.")
+        return redirect(url_for("index"))
+
+    rows = json.loads(batch_store.read_text(encoding="utf-8"))
+
+    # IMPORTANT: preserve job_id per hit
+    class _Hit:
+        def __init__(self, row):
+            self.job_id = row["job_id"]
+            self.start_page = row["start_page"]
+            self.header = row["header"]
+            self.image_file = row["image_file"]
+
+    hits = [_Hit(r) for r in rows]
+
+    # Build saved map correctly
+    saved_map = {
+        (h.job_id, h.image_file): is_saved(h.job_id, h.image_file)
+        for h in hits
+    }
+
+    return render_template(
+        "results.html",
+        job_id="__batch__",          # sentinel
+        batch_id=batch_id,
+        total=len(hits),
+        hits=hits,
+        saved_map=saved_map,
+        saved_url=url_for("view_saved"),
+        batch_mode=True,
+    )
+
+
+@app.route("/save_all_batch/<batch_id>", methods=["POST"])
+def save_all_batch(batch_id: str):
+    batch_store = OUTPUT_DIR / f"batch_{batch_id}.json"
+    if not batch_store.exists():
+        flash("Batch not found.")
+        return redirect(url_for("index"))
+
+    rows = json.loads(batch_store.read_text(encoding="utf-8"))
+
+    saved_count = 0
+    skipped = 0
+
+    for r in rows:
+        job_id = r["job_id"]
+        image_file = r["image_file"]
+
+        if is_saved(job_id, image_file):
+            skipped += 1
+            continue
+
+        src = OUTPUT_DIR / job_id / "snaps" / image_file
+        if not src.exists():
+            skipped += 1
+            continue
+
+        save_item(
+            job_id=job_id,
+            keywords=r["header"],
+            src_image_path=src,
+            start_page=r["start_page"],
+        )
+        saved_count += 1
+
+    flash(f"Saved {saved_count} items. Skipped {skipped}.")
+    return redirect(url_for("upload_complete", batch_id=batch_id))
+
 
 
 if __name__ == "__main__":

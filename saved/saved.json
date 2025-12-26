@@ -206,5 +206,629 @@
     "start_page": 18,
     "keywords": "using, fourier, bessel, modes, approximation, error, re, remark, mains, order, highlighting, efficiency, cpswf, basis, band, limited, signals, example, consider, function, j1, cr, j0, e1, r2, combines, radial, behaviour, angular, monogenic, compo, nent, goal, evaluate, quality, reconstruction, non, scalar, clifford, valued, 2d, well, known, transform, iden, tified, hankel, zero, rdr, h0, recall, following, two, key, identities, ar, k0, cos, zt, modified",
     "image_file": "583121ecfd9b48628e296b980a3a8417.png"
+  },
+  {
+    "id": "c356856df74a4c8f93a11f3a11d44b06",
+    "key": "9ace8a6f3bca4fbc90cbe37f0adb13f9:env_00001_p0005.png",
+    "job_id": "9ace8a6f3bca4fbc90cbe37f0adb13f9",
+    "start_page": 5,
+    "keywords": "2z, mp2, theorem, subgroup, commensu, suppose, rable, nite, dimensional, complex, representation, factoring, through, quotient, space, obstructions, obstruct, dual, holmodform, pairing, between, them, induced, above, sing, powser, other, words, modform, since, nondegenerate",
+    "image_file": "c356856df74a4c8f93a11f3a11d44b06.png"
+  },
+  {
+    "id": "4e363ff418fe4640b3305d6a643b0da3",
+    "key": "9ace8a6f3bca4fbc90cbe37f0adb13f9:env_00002_p0006.png",
+    "job_id": "9ace8a6f3bca4fbc90cbe37f0adb13f9",
+    "start_page": 6,
+    "keywords": "theorem, now, follows, fact, have, perfect, duality, between, nite, dimensional, complex, vector, spaces, invariant, under, some, group, acting, get, xed, points, representations, groups, completely, reducible, proves, heegner, divisors, fourier, coe, cients, section, prove, main, saying, roughly, modular, form, do, using, forms, singularities, constructed, nd, large, number, relations, even, lattice, signature, suppose, discrete, grassmannian, de, ne, divisor, locally, whose, support, union",
+    "image_file": "4e363ff418fe4640b3305d6a643b0da3.png"
+  },
+  {
+    "id": "949950c5647f4c1baf868b5635537313",
+    "key": "9ace8a6f3bca4fbc90cbe37f0adb13f9:env_00003_p0007.png",
+    "job_id": "9ace8a6f3bca4fbc90cbe37f0adb13f9",
+    "start_page": 7,
+    "keywords": "theorem, suppose, even, lattice, signature, modular, form, weight, representation, holomorphic, meromorphic, cusps, whose, coe, cients, cn, integers, yn, principal, heegner, divisor, other, words, modform, mp2, prinheeg",
+    "image_file": "949950c5647f4c1baf868b5635537313.png"
+  },
+  {
+    "id": "213a004fc79541ff8bea326dc3b692c4",
+    "key": "9ace8a6f3bca4fbc90cbe37f0adb13f9:env_00004_p0007.png",
+    "job_id": "9ace8a6f3bca4fbc90cbe37f0adb13f9",
+    "start_page": 7,
+    "keywords": "theorem, just, restatement, result, terms, divisors, yn, provided, show, characters, automorphic, forms, have, nite, order, can, shown, o2, follows, because, lie, groups, no, almost, simple, factors, real, rank, lattice, connected, group, abelianization, see, page, proposition, so, any, character, has, cases, use, embedding, trick, b98, lemma, product, restriction, not, necessarily, single, valued, however, look, proof, shows, constructed, vector, modular, form, g24",
+    "image_file": "213a004fc79541ff8bea326dc3b692c4.png"
+  },
+  {
+    "id": "3b91fb9ed8fa4dc0bb0f56cdda57befc",
+    "key": "9ace8a6f3bca4fbc90cbe37f0adb13f9:env_00005_p0008.png",
+    "job_id": "9ace8a6f3bca4fbc90cbe37f0adb13f9",
+    "start_page": 8,
+    "keywords": "theorem, remark, proof, quite, long, but, most, calculation, fourier, expansion, rather, logarithm, do, not, use, paper, parts, here, much, shorter, mainly, section",
+    "image_file": "3b91fb9ed8fa4dc0bb0f56cdda57befc.png"
+  },
+  {
+    "id": "741870a501204f76a22fa54d5fa7ebfe",
+    "key": "9ace8a6f3bca4fbc90cbe37f0adb13f9:env_00006_p0008.png",
+    "job_id": "9ace8a6f3bca4fbc90cbe37f0adb13f9",
+    "start_page": 8,
+    "keywords": "lemma, number, eld, nite, degree, over, dimen, holmodform, mp2, has, basis, whose, fourier, coe, cients, sional, space, powser, all, lie",
+    "image_file": "741870a501204f76a22fa54d5fa7ebfe.png"
+  },
+  {
+    "id": "de87d78b737140adab45ae1c7ff301ca",
+    "key": "9ace8a6f3bca4fbc90cbe37f0adb13f9:env_00007_p0008.png",
+    "job_id": "9ace8a6f3bca4fbc90cbe37f0adb13f9",
+    "start_page": 8,
+    "keywords": "lemma, holmodform, mp2, space, gal, conjugates, expansions, elements, well, de, ned, nite, dimensional, modform, sing, moreover, has, index",
+    "image_file": "de87d78b737140adab45ae1c7ff301ca.png"
+  },
+  {
+    "id": "b75eda6f9f844443ad7b191a56ee948c",
+    "key": "9ace8a6f3bca4fbc90cbe37f0adb13f9:env_00008_p0009.png",
+    "job_id": "9ace8a6f3bca4fbc90cbe37f0adb13f9",
+    "start_page": 9,
+    "keywords": "lemma, heegcl, complex, vector, space, generated, heegner, divisor, classes, nite, dimensional",
+    "image_file": "b75eda6f9f844443ad7b191a56ee948c.png"
+  },
+  {
+    "id": "db5eba712dd847b99b90bd281e9aafe4",
+    "key": "9ace8a6f3bca4fbc90cbe37f0adb13f9:env_00009_p0009.png",
+    "job_id": "9ace8a6f3bca4fbc90cbe37f0adb13f9",
+    "start_page": 9,
+    "keywords": "theorem, heegner, divisors, yn, considered, elements, divisor, class, group, heegcl, qne, modular, form, more, precisely, lies, space, holmodform, mp2, gal",
+    "image_file": "db5eba712dd847b99b90bd281e9aafe4.png"
+  },
+  {
+    "id": "ba636109166245e3b8062eb9e271f045",
+    "key": "9ace8a6f3bca4fbc90cbe37f0adb13f9:env_00010_p0010.png",
+    "job_id": "9ace8a6f3bca4fbc90cbe37f0adb13f9",
+    "start_page": 10,
+    "keywords": "example, work, out, theorem, case, modular, curves, see, z84, more, about, any, positive, integer, called, level, dimensional, even, lattice, all, symmetric, matrices, 2n, integers, norm, de, ned, b2, det, 4ac, dual, set, above, 2nz, can, identi, ed, mapping, matrix, value, splits, direct, sum, hyperbolic, unimodular, ii1, generated, element, ab, xvxt, sl2, group, mod, acts, cd, under, action, xes, elements, identify",
+    "image_file": "ba636109166245e3b8062eb9e271f045.png"
+  },
+  {
+    "id": "9bca1274a065416785e4e43e95cbddb3",
+    "key": "9ace8a6f3bca4fbc90cbe37f0adb13f9:env_00011_p0011.png",
+    "job_id": "9ace8a6f3bca4fbc90cbe37f0adb13f9",
+    "start_page": 11,
+    "keywords": "theorem, series, qne, almost, implies, main, result, modular, form, weight, type, assuming, gross, zagier, essentially, ideal, statement, conjectured, page, but, note, small, technical, di, erence, between, our, de, nitions, because, allow, nontrivial, unitary, characters, nite, order, nition, principal, heegner, divisors, makes, no, some, positive, power, automorphic, character, has, trivial, so, equivalent, have, implicitly, quotiented, out, cusps, can, ask, what, happens",
+    "image_file": "9bca1274a065416785e4e43e95cbddb3.png"
+  },
+  {
+    "id": "a3e635627552442faac83581eab603bc",
+    "key": "9ace8a6f3bca4fbc90cbe37f0adb13f9:env_00012_p0011.png",
+    "job_id": "9ace8a6f3bca4fbc90cbe37f0adb13f9",
+    "start_page": 11,
+    "keywords": "example, can, ask, all, relations, between, heegner, divisors",
+    "image_file": "a3e635627552442faac83581eab603bc.png"
+  },
+  {
+    "id": "77fb917d33a34ee88882f1fb276ac33b",
+    "key": "9ace8a6f3bca4fbc90cbe37f0adb13f9:env_00013_p0011.png",
+    "job_id": "9ace8a6f3bca4fbc90cbe37f0adb13f9",
+    "start_page": 11,
+    "keywords": "theorem, answer, seems, usually, they, but, some, exceptions, extra, relations, remark, added, has, mostly, been, proved, bruinier, br, example, gross, zagier, happens, whenever, modular, elliptic, curve, odd, rank, least, because, curves, all, heegner, points, vanish, might, possible, prove, no, further, between, follows, each, point, can, construct, real, analytic, function, logarithmic, singularity, along, divisor, applying, singular, theta, correspondence, possibly, non, holomorphic",
+    "image_file": "77fb917d33a34ee88882f1fb276ac33b.png"
+  },
+  {
+    "id": "1b0e580980214345a35301fa30e4e54d",
+    "key": "9ace8a6f3bca4fbc90cbe37f0adb13f9:env_00014_p0011.png",
+    "job_id": "9ace8a6f3bca4fbc90cbe37f0adb13f9",
+    "start_page": 11,
+    "keywords": "example, can, do, same, shimura, curves, associated, quaternion, algebras, over, rationals, suppose, non, split, dimensional, central, simple, algebra, nity, some, order, lattice, elements, orthogonal, inner, r2, product, minus, group, units, acts, conjugation, grassmannian, isomorphic, upper, half, plane, quotient, being, compact, riemann, surface, more, precisely, orbifold, called, curve, points, vectors, cm, so, theorem, implies, certain, divisors, coe, cients, modular, forms, weight",
+    "image_file": "1b0e580980214345a35301fa30e4e54d.png"
+  },
+  {
+    "id": "f85196700c5241cbba996a5b35da3163",
+    "key": "9ace8a6f3bca4fbc90cbe37f0adb13f9:env_00015_p0012.png",
+    "job_id": "9ace8a6f3bca4fbc90cbe37f0adb13f9",
+    "start_page": 12,
+    "keywords": "example, case, gross, kohnen, zagier, theorem, modular, form, get, cusp, y00, give, show, higher, dimensions, forms, not, necessarily, can, nonzero, take, lattice, ii25, each, positive, integer, have, heegner, divisor, irreducible, square, free, representation, trivial, so, vector, valued, type, same, level, particular, nd, base, rational, coe, cients, qny, sum, weight, must, multiple, qn, e14, therefore, y0, koecher, boundedness, principle, implies, no",
+    "image_file": "f85196700c5241cbba996a5b35da3163.png"
+  },
+  {
+    "id": "99f5208ac8fe4d2f814745673bcfd00b",
+    "key": "9ace8a6f3bca4fbc90cbe37f0adb13f9:env_00016_p0012.png",
+    "job_id": "9ace8a6f3bca4fbc90cbe37f0adb13f9",
+    "start_page": 12,
+    "keywords": "example, hirzebruch, zagier, showed, power, series, coe, cients, modular, curves, hilbert, surface, was, form, weight, show, similar, results, can, deduced, theorem, seems, likely, imply, result, but, have, not, checked, detail, background, about, surfaces, see, real, quadratic, eld, discriminant, ring, integers, denote, conjugate, do, case, level, associated, trivial, ideal, class, should, obvious, how, choose, extend, higher, levels, other, classes, even, lattice",
+    "image_file": "99f5208ac8fe4d2f814745673bcfd00b.png"
+  },
+  {
+    "id": "56b68fd43a5c45c3abab13d736f12444",
+    "key": "9ace8a6f3bca4fbc90cbe37f0adb13f9:env_00017_p0013.png",
+    "job_id": "9ace8a6f3bca4fbc90cbe37f0adb13f9",
+    "start_page": 13,
+    "keywords": "example, use, hermitian, matrices, rather, skew, emphasize, similarity, closely, related, case, modular, curves, fact, z84, zagier, shows, how, deduce, results, about, result, hilbert, surfaces, many, special, cases",
+    "image_file": "56b68fd43a5c45c3abab13d736f12444.png"
+  },
+  {
+    "id": "57dc2b9bf9ca4f0c9d17cdfea1b81203",
+    "key": "9ace8a6f3bca4fbc90cbe37f0adb13f9:env_00018_p0013.png",
+    "job_id": "9ace8a6f3bca4fbc90cbe37f0adb13f9",
+    "start_page": 13,
+    "keywords": "example, take, dimensional, lattice, symmetric, space, isomorphic, siegel, upper, half, plane, genus, divisors, associated, vectors, rather, their, images, quotient, just, so, called, humbert, surfaces, theorem, implies, power, series, coe, cients, certain, vector, valued, modular, forms, weight, similar, result, mentioned",
+    "image_file": "57dc2b9bf9ca4f0c9d17cdfea1b81203.png"
+  },
+  {
+    "id": "78cbe4f26a464a9db92dc8a79e2c9ba3",
+    "key": "9ace8a6f3bca4fbc90cbe37f0adb13f9:env_00019_p0013.png",
+    "job_id": "9ace8a6f3bca4fbc90cbe37f0adb13f9",
+    "start_page": 13,
+    "keywords": "example, take, dimensional, lattice, symmetric, space, isomorphic, hermitian, upper, half, complex, dimension, divisors, associated, vectors, quotients, siegel, hermann, he, found, modular, form, weight, sp4, case, note, groups, su, used, locally, o2, paper, particular, r2, grassmannian, references, borcherds, automorphic, forms, singularities, grassmannians, alg, geom, accepted, invent, math, br, bruinier, products, chern, classes, hirzebruch, zagier, no, http, www, rzuser, uni, heegner, preprint",
+    "image_file": "78cbe4f26a464a9db92dc8a79e2c9ba3.png"
+  },
+  {
+    "id": "5971a3396a5b49a9af354e1576a90fce",
+    "key": "4963d5fe88be4f52ad9913d6674cc2a9:env_00001_p0002.png",
+    "job_id": "4963d5fe88be4f52ad9913d6674cc2a9",
+    "start_page": 2,
+    "keywords": "theorem, x1, polynomials, f1, fs, xn, without, common, ze, ian, ros, denote, newton, polytope, unmixed, volume, exist, g1, gs, satisfying, g1f1, gsfs, nn, gifi, us, keep, notations, maximum, degree, fi, readily, derive, previous, result, bound, deg, dn, obtain, worst, case, fn, bounded, show, however, our, can, considerably, improve, usual, one, when, input, polynomial, system, sparse, example, note, naive, notion, sparseness",
+    "image_file": "5971a3396a5b49a9af354e1576a90fce.png"
+  },
+  {
+    "id": "f561c7f82a684d0ab61a7fb969121ce4",
+    "key": "4963d5fe88be4f52ad9913d6674cc2a9:env_00002_p0003.png",
+    "job_id": "4963d5fe88be4f52ad9913d6674cc2a9",
+    "start_page": 3,
+    "keywords": "theorem, x1, laurent, polynomials, f1, fs, xn, without, common, zeros, denote, newton, polytope, zzn, unmixed, volume, exist, g1, gs, satisfying, g1f1, gsfs, n2n, u2, gifi, proof, both, results, similar, takes, rst, step, translation, original, system, equations, over, ne, space, torus, linear, appropriate, toric, variety, resulting, solved, appealing, ective, nullstellensatz, forms, cohen, macaulay, graded, ring, key, lemma, proved, following, most, part",
+    "image_file": "f561c7f82a684d0ab61a7fb969121ce4.png"
+  },
+  {
+    "id": "a00e3dadc968455fad414cf48ca06fb6",
+    "key": "4963d5fe88be4f52ad9913d6674cc2a9:env_00003_p0003.png",
+    "job_id": "4963d5fe88be4f52ad9913d6674cc2a9",
+    "start_page": 3,
+    "keywords": "theorem, x1, polynomials, f1, fs, xn, without, common, ian, zeros, di, denote, degree, fi, assume, d1, ds, holds, exist, g1, gs, satisfying, g1f1, gsfs, qmin, deg, gifi, dj, case, when, quadratic, estimation, im, 2n, proves, bound, very, close, expected, finally, obtain, another, degrees, nullstellensatz, depends, number, variables, maximum, input, additional, parameter, called, algebraic, polynomial, system, going, introduce, arbitrary, matrix, entries",
+    "image_file": "a00e3dadc968455fad414cf48ca06fb6.png"
+  },
+  {
+    "id": "79ba386484074341b2db3f23f2a800f5",
+    "key": "4963d5fe88be4f52ad9913d6674cc2a9:env_00004_p0004.png",
+    "job_id": "4963d5fe88be4f52ad9913d6674cc2a9",
+    "start_page": 4,
+    "keywords": "theorem, x1, polynomials, f1, fs, xn, without, common, ian, zeros, denote, maximum, degree, fi, algebraic, polynomial, system, exist, g1, gs, satisfying, g1f1, gsfs, min, deg, gifi, ds, us, di, assume, d1, qmin, holds, ezout, bound, true, therefore, essentially, recover, previous, result, known, bounds, degrees, nullstellensatz, bounded, geometric, so, depend, show, however, much, smaller, some, particular, instances, force, dn, example, conclude",
+    "image_file": "79ba386484074341b2db3f23f2a800f5.png"
+  },
+  {
+    "id": "c27a724f53254fa1913e6dd8c6e1eee7",
+    "key": "4963d5fe88be4f52ad9913d6674cc2a9:env_00005_p0006.png",
+    "job_id": "4963d5fe88be4f52ad9913d6674cc2a9",
+    "start_page": 6,
+    "keywords": "lemma, notations, before, exist, linear, forms, min, weak, regular, sequence, some",
+    "image_file": "c27a724f53254fa1913e6dd8c6e1eee7.png"
+  },
+  {
+    "id": "426114247d3b4248b1959f6c02974a6b",
+    "key": "4963d5fe88be4f52ad9913d6674cc2a9:env_00006_p0006.png",
+    "job_id": "4963d5fe88be4f52ad9913d6674cc2a9",
+    "start_page": 6,
+    "keywords": "lemma, x0, homogeneous, unmixed, ideal, xn, ipn, points, not, lying, polyno, deg, mial, hold",
+    "image_file": "426114247d3b4248b1959f6c02974a6b.png"
+  },
+  {
+    "id": "eda2d7e0b7e64c2fb6163c42493fc829",
+    "key": "4963d5fe88be4f52ad9913d6674cc2a9:env_00007_p0006.png",
+    "job_id": "4963d5fe88be4f52ad9913d6674cc2a9",
+    "start_page": 6,
+    "keywords": "qp, deg, holds, true, lemma, degree, bound, proposition, follows, satis, es, stated, conditions, sequel, shall, denote, ji, contraction, ring, ideal, homogeneous",
+    "image_file": "eda2d7e0b7e64c2fb6163c42493fc829.png"
+  },
+  {
+    "id": "dc271f14e18e4885a02c95314871c592",
+    "key": "4963d5fe88be4f52ad9913d6674cc2a9:env_00008_p0006.png",
+    "job_id": "4963d5fe88be4f52ad9913d6674cc2a9",
+    "start_page": 6,
+    "keywords": "corollary, notations, before, exist, homogeneous, elements, h1, hs, satisfying, following, conditions, pci, hi, mod, ji, some, ci, ii, regular, sequence, deg, iii",
+    "image_file": "dc271f14e18e4885a02c95314871c592.png"
+  },
+  {
+    "id": "ff662273e696446383578cc784369b5f",
+    "key": "4963d5fe88be4f52ad9913d6674cc2a9:env_00009_p0007.png",
+    "job_id": "4963d5fe88be4f52ad9913d6674cc2a9",
+    "start_page": 7,
+    "keywords": "iq, lemma, ji, element, some",
+    "image_file": "ff662273e696446383578cc784369b5f.png"
+  },
+  {
+    "id": "e28c78d492a34c1d8bed94c28c9ef88e",
+    "key": "4963d5fe88be4f52ad9913d6674cc2a9:env_00010_p0008.png",
+    "job_id": "4963d5fe88be4f52ad9913d6674cc2a9",
+    "start_page": 8,
+    "keywords": "iq, lemma, ji, hi, element, some",
+    "image_file": "e28c78d492a34c1d8bed94c28c9ef88e.png"
+  },
+  {
+    "id": "22caddeba0be4ba4a94c582aa5fc9ae5",
+    "key": "4963d5fe88be4f52ad9913d6674cc2a9:env_00011_p0008.png",
+    "job_id": "4963d5fe88be4f52ad9913d6674cc2a9",
+    "start_page": 8,
+    "keywords": "iq, lemma, ji, li, element, some",
+    "image_file": "22caddeba0be4ba4a94c582aa5fc9ae5.png"
+  },
+  {
+    "id": "243030c25c314effa722db8cbf95b87b",
+    "key": "4963d5fe88be4f52ad9913d6674cc2a9:env_00012_p0009.png",
+    "job_id": "4963d5fe88be4f52ad9913d6674cc2a9",
+    "start_page": 9,
+    "keywords": "lemma, sturmfels, trung, vogel, theorems, rest, section, devoted, extension, previous, result, case, when, homogeneous, elements, arbitrary, degree, instead, linear, forms, first, establish, some, generalities, about, veronese, imbedding, us, denote, integer, a0, exponents, di, erent, monomials, ipn, xa0, xan, vd, x0, xn, map, regular, morphism, projective, varieties, so, image, closed, subvariety, variety, called, denoted, vn, de, ning, ideal, y0, yn, coordinate",
+    "image_file": "243030c25c314effa722db8cbf95b87b.png"
+  },
+  {
+    "id": "ec4324bcbd504ceeaa32057141083700",
+    "key": "4963d5fe88be4f52ad9913d6674cc2a9:env_00013_p0009.png",
+    "job_id": "4963d5fe88be4f52ad9913d6674cc2a9",
+    "start_page": 9,
+    "keywords": "lemma, homogeneous, cohen, macaulay, ideal, de, note, contraction, ring",
+    "image_file": "ec4324bcbd504ceeaa32057141083700.png"
+  },
+  {
+    "id": "b4506161963a45efaab4c276b1d3d072",
+    "key": "4963d5fe88be4f52ad9913d6674cc2a9:env_00014_p0010.png",
+    "job_id": "4963d5fe88be4f52ad9913d6674cc2a9",
+    "start_page": 10,
+    "keywords": "theorem, x0, xn, homogeneous, cohen, macaulay, ideal, x1, addition, element, not, zero, divisor, elements, f1, fs, lies, radical, denote, dimension, maximum, degree, fi, pd, dr, r2, holds, deg",
+    "image_file": "b4506161963a45efaab4c276b1d3d072.png"
+  },
+  {
+    "id": "bb751d032d294f82869cfb615f28bb9a",
+    "key": "4963d5fe88be4f52ad9913d6674cc2a9:env_00015_p0011.png",
+    "job_id": "4963d5fe88be4f52ad9913d6674cc2a9",
+    "start_page": 11,
+    "keywords": "corollary, x1, ideal, xn, assume, furthermore, ih, homogenization, ring, x0, cohen, macaulay, f1, fs, polynomials, without, common, zeros, ne, variety, exist, g1, gs, g1f1, gsfs, mod, dr, holds, deg, gifi",
+    "image_file": "bb751d032d294f82869cfb615f28bb9a.png"
+  },
+  {
+    "id": "079d532b201c4922809d6e1bfd363725",
+    "key": "4963d5fe88be4f52ad9913d6674cc2a9:env_00016_p0013.png",
+    "job_id": "4963d5fe88be4f52ad9913d6674cc2a9",
+    "start_page": 13,
+    "keywords": "theorem, x1, polynomials, f1, fs, xn, lies, radical, ideal, integral, polytope, contains, newton, assume, furthermore, zzn, normal, set, integer, vectors, exist, g1, gs, pd, g1f1, gsfs, min, holds, vol, gifi, deg",
+    "image_file": "079d532b201c4922809d6e1bfd363725.png"
+  },
+  {
+    "id": "33bc9b98bcbc4ca7a1c456054bf8e6f2",
+    "key": "4963d5fe88be4f52ad9913d6674cc2a9:env_00017_p0014.png",
+    "job_id": "4963d5fe88be4f52ad9913d6674cc2a9",
+    "start_page": 14,
+    "keywords": "corollary, notations, theorem, denote, maximum, degree, polynomials, fi, exist, g1, gs, x1, xn, pd, g1f1, gsfs, min, holds, vol, deg, gifi, going, show, example, bound, can, much, more, precise, usual, one, case, when, input, system, sparse, first, need, following, auxiliary, result",
+    "image_file": "33bc9b98bcbc4ca7a1c456054bf8e6f2.png"
+  },
+  {
+    "id": "9876c525ea9e49098b6e792801f9c814",
+    "key": "4963d5fe88be4f52ad9913d6674cc2a9:env_00018_p0014.png",
+    "job_id": "4963d5fe88be4f52ad9913d6674cc2a9",
+    "start_page": 14,
+    "keywords": "irn, lemma, pd, denote, integral, polytope, x1, xn, some, admits, unimodular, subdivision",
+    "image_file": "9876c525ea9e49098b6e792801f9c814.png"
+  },
+  {
+    "id": "d26b2ca96c664234940e1fd578331412",
+    "key": "4963d5fe88be4f52ad9913d6674cc2a9:env_00019_p0015.png",
+    "job_id": "4963d5fe88be4f52ad9913d6674cc2a9",
+    "start_page": 15,
+    "keywords": "example, x1, f1, fs, xn, polynomials, without, common, zeros, ian, assume, addition, degx1, fi, degxn, holds, irn, pd, denote, before, polytope, contains, newton, set, normal, preceding",
+    "image_file": "d26b2ca96c664234940e1fd578331412.png"
+  },
+  {
+    "id": "6298b632322b423285c89cf6848951c3",
+    "key": "4963d5fe88be4f52ad9913d6674cc2a9:env_00020_p0015.png",
+    "job_id": "4963d5fe88be4f52ad9913d6674cc2a9",
+    "start_page": 15,
+    "keywords": "lemma, thus, hypothesis, corollary, can, conclude, x1, exist, g1, gs, xn, g1f1, gsfs, min, pd, holds, gifi, volume, equals, particular, get, degree, bound, deg, much, sharper, estimation, follows, direct, application, usual, notations, again, theorem, denote, newton, polytope, polynomials, f1, fs, unmixed, assume, situation, take, bounds, nn, easy, check, hold, when, observation, case, observe, condition, redundant, obtain, similar, result, laurent",
+    "image_file": "6298b632322b423285c89cf6848951c3.png"
+  },
+  {
+    "id": "b7558757fbc141f1b842643f1c9eb4af",
+    "key": "4963d5fe88be4f52ad9913d6674cc2a9:env_00021_p0015.png",
+    "job_id": "4963d5fe88be4f52ad9913d6674cc2a9",
+    "start_page": 15,
+    "keywords": "theorem, laurent, polynomials, f1, fs, x1, xn, lies, radical, ideal, integral, polytope, contains, newton, denote, dimension, zzn, sume, furthermore, normal, set, integer, vectors, exist, g1, gs, pd, g1f1, gsfs, 2p, min, holds, vol, gifi",
+    "image_file": "b7558757fbc141f1b842643f1c9eb4af.png"
+  },
+  {
+    "id": "7f1a97ed47ae46ad80ae2ee54c575d84",
+    "key": "4963d5fe88be4f52ad9913d6674cc2a9:env_00022_p0017.png",
+    "job_id": "4963d5fe88be4f52ad9913d6674cc2a9",
+    "start_page": 17,
+    "keywords": "corollary, notations, theorem, denote, maximum, degree, laurent, polynomials, fi, exist, x1, g1, gs, xn, pd, g1f1, gsfs, 2p, min, holds, vol, deg, gifi, improved, bounds, degrees, nullstellensatz, section, consider, shall, apply, methods, used, direct, way, without, any, reference, veronese, map, setting, classic, ective, proof, follows, closely, same, lines, so, skip, some, veri, cations, order, avoid, unnecessary, repetitions, assume, homogeneous, f1",
+    "image_file": "7f1a97ed47ae46ad80ae2ee54c575d84.png"
+  },
+  {
+    "id": "2c9d81fa60f94d1c9bb0771c74bf2c88",
+    "key": "4963d5fe88be4f52ad9913d6674cc2a9:env_00023_p0018.png",
+    "job_id": "4963d5fe88be4f52ad9913d6674cc2a9",
+    "start_page": 18,
+    "keywords": "lemma, notations, before, exist, homogeneous, polynomials, x0, h1, hs, xn, satisfying, following, conditions, xci, hi, fi, mod, ji, some, ci, ii, regular, sequence, max, deg, iii, introduce, notation, denote, degree, qi, dj, ideal, recall, ezout, bound, min, integer, di, dn, iu, unmixed, part",
+    "image_file": "2c9d81fa60f94d1c9bb0771c74bf2c88.png"
+  },
+  {
+    "id": "ba6dedc0b6744576b508ea0e85c6ef2b",
+    "key": "4963d5fe88be4f52ad9913d6674cc2a9:env_00024_p0018.png",
+    "job_id": "4963d5fe88be4f52ad9913d6674cc2a9",
+    "start_page": 18,
+    "keywords": "lemma, ji, polynomial, some",
+    "image_file": "ba6dedc0b6744576b508ea0e85c6ef2b.png"
+  },
+  {
+    "id": "963f52fda255467ea14039834ebb13b7",
+    "key": "4963d5fe88be4f52ad9913d6674cc2a9:env_00025_p0018.png",
+    "job_id": "4963d5fe88be4f52ad9913d6674cc2a9",
+    "start_page": 18,
+    "keywords": "lemma, ji, li, polynomial, some",
+    "image_file": "963f52fda255467ea14039834ebb13b7.png"
+  },
+  {
+    "id": "e3434d424f1e47a6b42d73a9810bda58",
+    "key": "4963d5fe88be4f52ad9913d6674cc2a9:env_00026_p0019.png",
+    "job_id": "4963d5fe88be4f52ad9913d6674cc2a9",
+    "start_page": 19,
+    "keywords": "lemma, min, notations, before, case, qmin, when, deg, fi, have, dj",
+    "image_file": "e3434d424f1e47a6b42d73a9810bda58.png"
+  },
+  {
+    "id": "52a9f426794148a08bffe1fae0ac3a46",
+    "key": "4963d5fe88be4f52ad9913d6674cc2a9:env_00027_p0019.png",
+    "job_id": "4963d5fe88be4f52ad9913d6674cc2a9",
+    "start_page": 19,
+    "keywords": "theorem, x0, homogeneous, polynomials, f1, fs, xn, lies, radical, ideal, di, denote, degree, ds, fi, assume, d1, holds, xd, qmin",
+    "image_file": "52a9f426794148a08bffe1fae0ac3a46.png"
+  },
+  {
+    "id": "0621ed5b7aca4cee82dbc2c821a9b59a",
+    "key": "4963d5fe88be4f52ad9913d6674cc2a9:env_00028_p0020.png",
+    "job_id": "4963d5fe88be4f52ad9913d6674cc2a9",
+    "start_page": 20,
+    "keywords": "example, us, consider, polynomial, system, x1xd, xd, x2, f1, f2, fn, xn, some, easy, check, polynomials, have, no, common, zero, ian, denote, geometric, degree, sense, algebraic, respectively, going, compute, both, integers, particular, hi, ij, fj, matrix, entries, induced, linear, combinations, apply, gauss, elimination, method, rows, using, pivots, columns, ascending, order, invertible, elementary, operations, produces, q1, ql, generate, same, ideal, h1",
+    "image_file": "0621ed5b7aca4cee82dbc2c821a9b59a.png"
+  },
+  {
+    "id": "2b4671313cdf410c8633ebcdb8d1b036",
+    "key": "4963d5fe88be4f52ad9913d6674cc2a9:env_00029_p0021.png",
+    "job_id": "4963d5fe88be4f52ad9913d6674cc2a9",
+    "start_page": 21,
+    "keywords": "theorem, x0, homogeneous, polynomials, f1, fs, xn, lies, radical, ideal, denote, nization, fi, maximum, degree, polynomial, system, xd, min, holds, follows, result, same, way, was, derived, apply, bound, previous, example, obtain, exist, x1, g1, gn, satisfying, g1f1, gnfn, n2, deg, gifi, fact, have, identity, f2, f3, fn, work, originated, several, conversations, bernd, acknowledgements, sturmfels, he, motivated, me, think, about, sparse",
+    "image_file": "2b4671313cdf410c8633ebcdb8d1b036.png"
+  },
+  {
+    "id": "07abdce9d9f943ac949390ea3079f97e",
+    "key": "1f196e206bfa4fddafd590a5e5fd6ef8:env_00001_p0006.png",
+    "job_id": "1f196e206bfa4fddafd590a5e5fd6ef8",
+    "start_page": 6,
+    "keywords": "proposition, nite, set, elements, ang, gi, gr, obner, basis, implies, computation, bases, over, weyl, algebra, works, just, polynomial, rings, algorithm, buchberger, g1, gs, input, output, begin, repeat, sij, add, until, all, return, end, algorithms, local, cohomology, now, shall, describe, construction, kernels, linear, maps, using, again, similar, commutative, case, rst, consider, map, between, free, modules, ls, lr, assume, suppose, order, make",
+    "image_file": "07abdce9d9f943ac949390ea3079f97e.png"
+  },
+  {
+    "id": "e6a9b8aedf6b47359c785ac22696b4e0",
+    "key": "1f196e206bfa4fddafd590a5e5fd6ef8:env_00002_p0007.png",
+    "job_id": "1f196e206bfa4fddafd590a5e5fd6ef8",
+    "start_page": 7,
+    "keywords": "proposition, g1, gs, assume, gr, obner, basis, sij, dijkgk, standard, expressions, schreyer, polynomials, ls, ij, dijk, generate, kernel, lr, sending, gi, proof, proceeds, exactly, commutative, case, see, ex, ample, section, explain, now, how, nd, set, generators, arbitrary, linear, map, subsection, suppose, p1, pa, q1, qb, su, cient, consider, since, may, lift, free, module, surjecting, onto, before, element, sum, ai, replaced",
+    "image_file": "e6a9b8aedf6b47359c785ac22696b4e0.png"
+  },
+  {
+    "id": "bcaaec06e9354e09916b843c076bbede",
+    "key": "1f196e206bfa4fddafd590a5e5fd6ef8:env_00003_p0009.png",
+    "job_id": "1f196e206bfa4fddafd590a5e5fd6ef8",
+    "start_page": 9,
+    "keywords": "lemma, suppose, p1, pr, saturated, jl, above, de, nitions, ideal, generated, together, images, pj, under, automorphism, induced, uli, walther",
+    "image_file": "bcaaec06e9354e09916b843c076bbede.png"
+  },
+  {
+    "id": "f665d8b72c0d4d86a34080b01b57c8b6",
+    "key": "1f196e206bfa4fddafd590a5e5fd6ef8:env_00004_p0010.png",
+    "job_id": "1f196e206bfa4fddafd590a5e5fd6ef8",
+    "start_page": 10,
+    "keywords": "proposition, holonomic, no, integer, bl, root, smaller, have, isomorphisms, jl, rf",
+    "image_file": "f665d8b72c0d4d86a34080b01b57c8b6.png"
+  },
+  {
+    "id": "9a811284d6fe4bfcacb1edcdaa46f486",
+    "key": "1f196e206bfa4fddafd590a5e5fd6ef8:env_00005_p0012.png",
+    "job_id": "1f196e206bfa4fddafd590a5e5fd6ef8",
+    "start_page": 12,
+    "keywords": "proposition, q1, qr, y1, y2, two, new, variables, left, ideal, generated, qi, homogenizations, relative, weight, above, y1y2, gr, obner, basis, under, monomial, order, eliminates, each, set, tt, g0, generates",
+    "image_file": "9a811284d6fe4bfcacb1edcdaa46f486.png"
+  },
+  {
+    "id": "3d675481cd9e4fc1a4f5511a1f0ce53f",
+    "key": "1f196e206bfa4fddafd590a5e5fd6ef8:env_00006_p0013.png",
+    "job_id": "1f196e206bfa4fddafd590a5e5fd6ef8",
+    "start_page": 13,
+    "keywords": "lemma, homogeneous, ideal, y1, respect, weights, introduced, before, proposition, de, ned, proof, assume, ya, operator, implies, 1p, some",
+    "image_file": "3d675481cd9e4fc1a4f5511a1f0ce53f.png"
+  },
+  {
+    "id": "b332d44630ca45d78bf5edd9f2b0138b",
+    "key": "1f196e206bfa4fddafd590a5e5fd6ef8:env_00007_p0014.png",
+    "job_id": "1f196e206bfa4fddafd590a5e5fd6ef8",
+    "start_page": 14,
+    "keywords": "jl, corollary, known, suppose, holonomic, ideal, bl, saturated, bernstein, polynomial, rf, can, found, bd, 1sd, sd, b0, moreover, maxi, bi, de, ne, order, nd, smallest, integer, root, 2b, one, needs, check, integers, between, particular, su, ces",
+    "image_file": "b332d44630ca45d78bf5edd9f2b0138b.png"
+  },
+  {
+    "id": "95e5a3d82b0042a1afc227feb7b555ed",
+    "key": "1f196e206bfa4fddafd590a5e5fd6ef8:env_00008_p0019.png",
+    "job_id": "1f196e206bfa4fddafd590a5e5fd6ef8",
+    "start_page": 19,
+    "keywords": "example, ideal, x1, x6, gener, x2, x3, ated, minors, matrix, x4, x5, hi, h2, because, height, prime, generated, so, remain, h3, ing, case, module, fact, does, not, vanish, but, until, discovery, our, algorithm, non, vanishing, was, rather, trivial, provides, rst, known, proof, direct, calculation, previously, hochster, pointed, out, nonzero, using, map, splits, compare, remark, bruns, schw, anzl, corollary, lemma, provided",
+    "image_file": "95e5a3d82b0042a1afc227feb7b555ed.png"
+  },
+  {
+    "id": "1065c744f36e4d22ba8982105b964293",
+    "key": "1f196e206bfa4fddafd590a5e5fd6ef8:env_00009_p0021.png",
+    "job_id": "1f196e206bfa4fddafd590a5e5fd6ef8",
+    "start_page": 21,
+    "keywords": "remark, suspect, all, holonomic, fg, torsionfree, mod, ules, have, rg, bl, min, would, two, nice, consequences, first, guarantee, successive, localization, cech, factors, product, does, not, lead, matrices, complex, entries, higher, degree, once, secondly, were, known, true, could, proceed, follows, ci, fi, computation, f1, fr, compute, nd, minimal, integer, bernstein, roots, substitute, them, appropriate, annihilator, ideals, now, want, use, algorithm, order",
+    "image_file": "1065c744f36e4d22ba8982105b964293.png"
+  },
+  {
+    "id": "7a54a760e9644ec79f0300e380b89750",
+    "key": "50854006f54b4373b91c0c4651644484:env_00001_p0002.png",
+    "job_id": "50854006f54b4373b91c0c4651644484",
+    "start_page": 2,
+    "keywords": "example, fano, variety, coindex, projective, space, moreover, ladders, maximal, last, member, non",
+    "image_file": "7a54a760e9644ec79f0300e380b89750.png"
+  },
+  {
+    "id": "c4b20cac2552489bad1afa26696a8174",
+    "key": "50854006f54b4373b91c0c4651644484:env_00002_p0002.png",
+    "job_id": "50854006f54b4373b91c0c4651644484",
+    "start_page": 2,
+    "keywords": "corollary, cartier, divisor, coindex, weak, log, fano, bx, general, element, smooth, base, points, locus, most, nite, set, dimbsl, curves, any, has, isolated, singularities, moreover, bsl, might, have, exactly, canonical, double, main, techniques, adjunction, conjecture, kawamata, canon, ical, centers, relation, between, dimension, discrepancies, see, he, me1, lemma, theorem, follows, adjunc, tion, ective, nonvanishing, fanos, surfaces, prove, section, previous, draft, extended, trick",
+    "image_file": "c4b20cac2552489bad1afa26696a8174.png"
+  },
+  {
+    "id": "447f780a346946d5a1c76de39fe99216",
+    "key": "50854006f54b4373b91c0c4651644484:env_00003_p0003.png",
+    "job_id": "50854006f54b4373b91c0c4651644484",
+    "start_page": 3,
+    "keywords": "bo, proposition, ka1, klt, pair, bx, ective, cartier, divisor, log, canonical, clc, nite, set, closed, under, intersection, w1, w2, same, holds, any, irreducible, component, ii, minimal, elements, called, centers, they, normal, varieties",
+    "image_file": "447f780a346946d5a1c76de39fe99216.png"
+  },
+  {
+    "id": "0a34eac6676342bab3d68cdc8965e5ee",
+    "key": "50854006f54b4373b91c0c4651644484:env_00004_p0003.png",
+    "job_id": "50854006f54b4373b91c0c4651644484",
+    "start_page": 3,
+    "keywords": "remark, bx, klt, pair, nef, big, cartier, divisor, log, canonical, clc, minimal, lc, center, any, can, perturbed, just, one, place, over, resolution, indeed, obtained, taking, am, florin, ambro, adjunction, bo, conjecture, ec, tive, ective, bw, kw, ii, kx",
+    "image_file": "0a34eac6676342bab3d68cdc8965e5ee.png"
+  },
+  {
+    "id": "96f38be550174bbaae30d2867372fb27",
+    "key": "50854006f54b4373b91c0c4651644484:env_00005_p0004.png",
+    "job_id": "50854006f54b4373b91c0c4651644484",
+    "start_page": 4,
+    "keywords": "remark, weak, form, adjunction, theorem, was, proved, several, cases, kawamata, ka1, ka2, codw, dimw, latest, result, after, small, perturbation, above, conjecture, can, substitute, formula, paper, see, lemma",
+    "image_file": "96f38be550174bbaae30d2867372fb27.png"
+  },
+  {
+    "id": "c238b45b73ba43489de679fe26e2c782",
+    "key": "50854006f54b4373b91c0c4651644484:env_00006_p0004.png",
+    "job_id": "50854006f54b4373b91c0c4651644484",
+    "start_page": 4,
+    "keywords": "bo, theorem, ka3, klt, pair, bx, ective, cartier, divisor, log, canonical, minimal, center, singularities, ample, rational, positive, number, bw, ii, kx, kw, particular, has, ladders, fu, fold, polarized, line, bundle, sequence, vn, ln, vc, lc, called, ladder, each, vj, irreducible, reduced, lj, member, restriction, regular, h0, map, surjective, existence, above, implies, base, locus, coincide, hence, dimension, most, weak, fano, varieties",
+    "image_file": "c238b45b73ba43489de679fe26e2c782.png"
+  },
+  {
+    "id": "21f7fbf0a37347549f921e442131d5e5",
+    "key": "50854006f54b4373b91c0c4651644484:env_00007_p0004.png",
+    "job_id": "50854006f54b4373b91c0c4651644484",
+    "start_page": 4,
+    "keywords": "remark, possible, extend, general, properties, log, fano, weak, varieties, indeed, bx, cartier, coindex, good, divisors, birational, contraction, hy, ample, has, ky, kx, consequence, theorem, kmm, note, sy, lct, canonical, centers, images, moreover, bsl, nonvanishing, section, variety, dimension, ind, nef, big, divisor, h0, dimh0, ox, compute, some, cases, notations, hn, co, 1tn, antn, th, a0, jh, pj, serre, duality, kawamata, viehweg",
+    "image_file": "21f7fbf0a37347549f921e442131d5e5.png"
+  },
+  {
+    "id": "065598f121074f5692dc29f998a1e99c",
+    "key": "50854006f54b4373b91c0c4651644484:env_00008_p0005.png",
+    "job_id": "50854006f54b4373b91c0c4651644484",
+    "start_page": 5,
+    "keywords": "dim, lemma, p1, log, fano, curve, boundary, ii, del, pezzo, have",
+    "image_file": "065598f121074f5692dc29f998a1e99c.png"
+  },
+  {
+    "id": "e69a26fc1bfb416b916d3e8b8d60b9b6",
+    "key": "50854006f54b4373b91c0c4651644484:env_00009_p0005.png",
+    "job_id": "50854006f54b4373b91c0c4651644484",
+    "start_page": 5,
+    "keywords": "dim, lemma, co, more, precisely, h0, ii, pn, iii, florin, ambro",
+    "image_file": "e69a26fc1bfb416b916d3e8b8d60b9b6.png"
+  },
+  {
+    "id": "24d1ea37f77b497797d6c64791a941a5",
+    "key": "50854006f54b4373b91c0c4651644484:env_00010_p0006.png",
+    "job_id": "50854006f54b4373b91c0c4651644484",
+    "start_page": 6,
+    "keywords": "hn, kx, remark, note, particular, pn",
+    "image_file": "24d1ea37f77b497797d6c64791a941a5.png"
+  },
+  {
+    "id": "18ca1062d8e44266a0141264d691e569",
+    "key": "50854006f54b4373b91c0c4651644484:env_00011_p0007.png",
+    "job_id": "50854006f54b4373b91c0c4651644484",
+    "start_page": 7,
+    "keywords": "h0, dim, remark, don, know, even, all, coindex, divisors, weak, log, fano, hence, pn, case, since, kx, hn, bx, have, unless, therefore, fold, nef, big, cartier, divisor, has, ample, assume, exception, above, duality, equivalent, residual, polynomial, degree, appearing, expression, form, t4, t3, t2, assuming, now, get, pk, p0, can, realized, would, amples, very, interesting, nd, folds, like, show, they, cannot",
+    "image_file": "18ca1062d8e44266a0141264d691e569.png"
+  },
+  {
+    "id": "67103e0f4974446793f2a17dd0cdcbc2",
+    "key": "50854006f54b4373b91c0c4651644484:env_00012_p0008.png",
+    "job_id": "50854006f54b4373b91c0c4651644484",
+    "start_page": 8,
+    "keywords": "proposition, bx, projective, log, surface, kawamata, ter, divisor, minal, singularities, cartier, nef, big, kx, h0, ox, birationally, ruled, general, member, ruling, one, following, holds, 2a, hf, cd, 2b",
+    "image_file": "67103e0f4974446793f2a17dd0cdcbc2.png"
+  },
+  {
+    "id": "2c932d85f3784f34a8018e3a5adbec8b",
+    "key": "50854006f54b4373b91c0c4651644484:env_00013_p0008.png",
+    "job_id": "50854006f54b4373b91c0c4651644484",
+    "start_page": 8,
+    "keywords": "remark, assumption, singularities, used, kawamata, viehweg, van, ishing, case, 2a, covers, absolute, bx, since, hf, bxf, df",
+    "image_file": "2c932d85f3784f34a8018e3a5adbec8b.png"
+  },
+  {
+    "id": "bbcda37260a445cfb72060b8e89e178c",
+    "key": "50854006f54b4373b91c0c4651644484:env_00014_p0008.png",
+    "job_id": "50854006f54b4373b91c0c4651644484",
+    "start_page": 8,
+    "keywords": "lemma, bration, nonsingular, surface, curve, general, ber, smooth, rational, divisor, nef, hf, os, 2h, ks, p1, bundle, equality, holds",
+    "image_file": "bbcda37260a445cfb72060b8e89e178c.png"
+  },
+  {
+    "id": "b53b8b017e764836be895a9bf845db83",
+    "key": "50854006f54b4373b91c0c4651644484:env_00015_p0009.png",
+    "job_id": "50854006f54b4373b91c0c4651644484",
+    "start_page": 9,
+    "keywords": "lemma, linear, system, klt, log, variety, bx, florin, ambro, dim, general, member, canonical, threshold, lct, constant, maximal, bsl, lcs, one, following, holds, lc, center, included, pure, terminal, has, no, xed, components, moreover, case, possibly, disconnected, bs, pair",
+    "image_file": "b53b8b017e764836be895a9bf845db83.png"
+  },
+  {
+    "id": "96f6ba68c1e745c49f2d24a4ab7d08b1",
+    "key": "50854006f54b4373b91c0c4651644484:env_00016_p0010.png",
+    "job_id": "50854006f54b4373b91c0c4651644484",
+    "start_page": 10,
+    "keywords": "lemma, bx, weak, log, fano, cartier, nef, big, kx, ind, divisor, assume, canonical, lcs, have, hj, th, h0, ii",
+    "image_file": "96f6ba68c1e745c49f2d24a4ab7d08b1.png"
+  },
+  {
+    "id": "11aab30e23784707873b1b84f3b12bcc",
+    "key": "50854006f54b4373b91c0c4651644484:env_00017_p0010.png",
+    "job_id": "50854006f54b4373b91c0c4651644484",
+    "start_page": 10,
+    "keywords": "ind, theorem, corollary, appendix, applies, same, good, divisors, hi, values, kawamata, viehweg, vanishing, gives, th, hence, lemma, follows",
+    "image_file": "11aab30e23784707873b1b84f3b12bcc.png"
+  },
+  {
+    "id": "006d88d029d74f3594dc57fff0759a2b",
+    "key": "50854006f54b4373b91c0c4651644484:env_00018_p0011.png",
+    "job_id": "50854006f54b4373b91c0c4651644484",
+    "start_page": 11,
+    "keywords": "lemma, same, hypothesis, previous, assume, ample, minimal, log, canonical, center, bx, bsl, included, h0, ox, any, cartier, divisor, coindex, codz, fano, dimension, dimz, ind, cf, me1, have",
+    "image_file": "006d88d029d74f3594dc57fff0759a2b.png"
+  },
+  {
+    "id": "0c26f92f46444b849c62f0c4eed2552f",
+    "key": "50854006f54b4373b91c0c4651644484:env_00019_p0011.png",
+    "job_id": "50854006f54b4373b91c0c4651644484",
+    "start_page": 11,
+    "keywords": "h0, dimz, lemma, gives, th, particular, degp, since, has, least, zeros, contra, diction, negative, hence",
+    "image_file": "0c26f92f46444b849c62f0c4eed2552f.png"
+  },
+  {
+    "id": "9636de869bfb443986f49494bb209b51",
+    "key": "50854006f54b4373b91c0c4651644484:env_00020_p0013.png",
+    "job_id": "50854006f54b4373b91c0c4651644484",
+    "start_page": 13,
+    "keywords": "theorem, shokurov, bx, log, pair, cartier, divisor, nef, big, kx, hj",
+    "image_file": "9636de869bfb443986f49494bb209b51.png"
+  },
+  {
+    "id": "47951fc3dfab4f418266972f9e17e3af",
+    "key": "50854006f54b4373b91c0c4651644484:env_00021_p0013.png",
+    "job_id": "50854006f54b4373b91c0c4651644484",
+    "start_page": 13,
+    "keywords": "corollary, same, hypothesis, above, assume, bx, log, canonical, pair, lcs, map, h0, ox, oy, surjective, hi, isomorphism, any, references, theorem, about, good, divisors, fano, varieties, al, alexeev, lect, notes, math, classi, cation, theories, polarized, fu, fujita, london, soc, lecture, note, series, algebraic, geometry, ha, hartshorne, springer, verlag, new, york, heidelberg, conjecture, he, helmke, duke, freeness, folds, ka1, kawamata, preprint, subadjunction",
+    "image_file": "47951fc3dfab4f418266972f9e17e3af.png"
   }
 ]

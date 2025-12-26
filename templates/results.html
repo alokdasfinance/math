@@ -1,76 +1,148 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>Extraction Results</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <style>
-    body { font-family: system-ui, Arial, sans-serif; margin:24px; color:#111; }
-    .topbar { display:flex; justify-content:space-between; flex-wrap:wrap; gap:12px; }
-    .actions { display:flex; gap:8px; flex-wrap:wrap; }
-    .btn { padding:8px 12px; border-radius:8px; border:1px solid #ccc; background:#fff; cursor:pointer; text-decoration:none; color:#111; }
-    .btn-primary { background:#111; color:#fff; border-color:#111; }
-    .btn-disabled { opacity:.5; cursor:not-allowed; }
-    .pill { font-size:12px; background:#f3f4f6; border:1px solid #e5e7eb; padding:3px 8px; border-radius:999px; }
-    .row { border:1px solid #e5e5e5; border-radius:12px; padding:12px; display:grid; grid-template-columns:1fr 2fr; gap:12px; margin-top:14px; }
-    img { max-width:100%; border-radius:10px; border:1px solid #eee; }
-    .kw { font-size:13px; line-height:1.35; }
-    .meta { font-size:12px; color:#666; margin-bottom:6px; }
-    .flash { margin:12px 0; padding:10px; border-radius:8px; background:#fff7ed; border:1px solid #fed7aa; color:#9a3412; }
-  </style>
+    <meta charset="UTF-8">
+    <title>Extraction Results</title>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 30px;
+            background: #fafafa;
+        }
+
+        h1 {
+            margin-bottom: 10px;
+        }
+
+        .top-bar {
+            margin-bottom: 20px;
+        }
+
+        .top-bar button {
+            padding: 8px 14px;
+            font-size: 14px;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: 300px 1fr;
+            gap: 20px;
+            margin-bottom: 25px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .keywords {
+            font-size: 13px;
+            line-height: 1.4;
+            color: #333;
+            word-break: break-word;
+        }
+
+        .meta {
+            font-size: 12px;
+            color: #666;
+            margin-bottom: 6px;
+        }
+
+        img {
+            max-width: 100%;
+            border: 1px solid #ccc;
+            background: white;
+        }
+
+        form.inline {
+            display: inline;
+        }
+
+        .saved-label {
+            color: green;
+            font-weight: bold;
+            font-size: 13px;
+        }
+    </style>
 </head>
 <body>
 
-<div class="topbar">
-  <div>
-    <h1 style="margin:0;">Results</h1>
-    <div class="meta">
-      Found {{ total }} items
-      <span class="pill">Job {{ job_id }}</span>
-    </div>
-  </div>
+<h1>Extracted Environments</h1>
 
-  <div class="actions">
-    <!-- NEW RETURN TO HOME BUTTON -->
-    <a class="btn" href="{{ url_for('index') }}">Return to Home</a>
+<div class="top-bar">
+    <a href="{{ url_for('index') }}">
+        <button>← Upload More PDFs</button>
+    </a>
 
-    <a class="btn" href="{{ saved_url }}">View Saved</a>
+    {% if batch_mode %}
+        <form method="POST"
+              action="{{ url_for('save_all_batch', batch_id=batch_id) }}"
+              class="inline">
+            <button type="submit">Save All</button>
+        </form>
+    {% else %}
+        <form method="POST"
+              action="{{ url_for('save_all', job_id=job_id) }}"
+              class="inline">
+            <button type="submit">Save All</button>
+        </form>
+    {% endif %}
 
-    <form action="{{ url_for('save_all', job_id=job_id) }}" method="post">
-      <button class="btn btn-primary" type="submit">Save All</button>
-    </form>
-
-    <a class="btn" href="{{ url_for('download', job_id=job_id) }}">Download ZIP</a>
-  </div>
+    <a href="{{ saved_url }}">
+        <button>View Saved</button>
+    </a>
 </div>
 
-{% with messages = get_flashed_messages() %}
-  {% for m in messages %}
-    <div class="flash">{{ m }}</div>
-  {% endfor %}
-{% endwith %}
+<p>
+    Total extracted items: <strong>{{ total }}</strong>
+</p>
+
+<hr>
 
 {% for hit in hits %}
-  <div class="row">
-    <div>
-      <div class="meta">Page {{ hit.start_page }}</div>
-      <div class="kw">{{ hit.header }}</div>
 
-      {% set already = saved_map.get(hit.image_file, false) %}
-      {% if already %}
-        <button class="btn btn-disabled" disabled>Saved</button>
-      {% else %}
-        <form action="{{ url_for('save', job_id=job_id, image_file=hit.image_file) }}" method="post">
-          <button class="btn btn-primary" type="submit">Save</button>
-        </form>
-      {% endif %}
+<div class="grid">
+    <div>
+        <div class="meta">
+            Start page: {{ hit.start_page }}
+        </div>
+
+        <div class="keywords">
+            {{ hit.header }}
+        </div>
+
+        <div style="margin-top:10px;">
+            {% if batch_mode %}
+                {% if saved_map[(hit.job_id, hit.image_file)] %}
+                    <span class="saved-label">Saved</span>
+                {% else %}
+                    <form method="POST"
+                          action="{{ url_for('save', job_id=hit.job_id, image_file=hit.image_file) }}"
+                          class="inline">
+                        <button type="submit">Save</button>
+                    </form>
+                {% endif %}
+            {% else %}
+                {% if saved_map[hit.image_file] %}
+                    <span class="saved-label">Saved</span>
+                {% else %}
+                    <form method="POST"
+                          action="{{ url_for('save', job_id=job_id, image_file=hit.image_file) }}"
+                          class="inline">
+                        <button type="submit">Save</button>
+                    </form>
+                {% endif %}
+            {% endif %}
+        </div>
     </div>
 
     <div>
-      <img src="{{ url_for('serve_snap', job_id=job_id, filename=hit.image_file) }}">
-      <div class="meta">{{ hit.image_file }}</div>
+        <img
+            src="{{ url_for('serve_snap', job_id=hit.job_id, filename=hit.image_file) }}"
+            alt="Extracted environment image">
     </div>
-  </div>
+</div>
+
 {% endfor %}
 
 </body>

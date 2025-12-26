@@ -49,7 +49,6 @@
     .hint { font-size: 13px; color:#666; }
     .count { font-size: 13px; color:#666; }
 
-    /* Highlight matches inside keyword list */
     mark.hl {
       background: #fff7ed;
       border: 1px solid #fed7aa;
@@ -108,8 +107,6 @@
     >
       <div>
         <div class="meta">Page {{ hit.start_page }}</div>
-
-        <!-- We render original keywords into this span; JS will rewrite with highlight markup -->
         <div class="kw keywords-text">{{ hit.header }}</div>
 
         <form action="{{ url_for('unsave', saved_id=hit.saved_id) }}" method="post">
@@ -118,7 +115,7 @@
       </div>
 
       <div>
-        <img src="{{ url_for('serve_saved_img', filename=hit.image_file) }}">
+        <img src="{{ url_for('serve_saved_img', filename=hit.image_file) }}" alt="saved snippet">
         <div class="meta">{{ hit.image_file }}</div>
       </div>
     </div>
@@ -133,7 +130,6 @@
   const items = Array.from(document.querySelectorAll('.saved-item'));
   const visibleCountEl = document.getElementById('visibleCount');
 
-  // Active search terms (lowercase)
   let terms = [];
 
   function escapeHtml(s) {
@@ -165,30 +161,22 @@
   }
 
   function highlightKeywordsText(original, termsLower) {
-    // Highlight whole tokens inside the comma-separated keyword string.
-    // We do a conservative token-based highlight to avoid weird partial HTML issues.
     if (!termsLower.length) return escapeHtml(original);
 
-    // Split on commas, keep delimiters for reconstruction
     const parts = original.split(',');
     const out = parts.map((p) => {
-      const raw = p;            // includes leading space possibly
+      const raw = p;
       const trimmed = raw.trim();
       const lower = trimmed.toLowerCase();
 
-      // If this token exactly equals any term, highlight it
       if (termsLower.includes(lower)) {
-        // preserve original spacing around token: we reconstruct as " <mark>token</mark>"
         const leadSpace = raw.startsWith(' ') ? ' ' : '';
         return leadSpace + `<mark class="hl">${escapeHtml(trimmed)}</mark>`;
       }
 
-      // Otherwise, do substring highlight when term appears inside this token (still safe)
-      // Example: searching "group" highlights "subgroup"
       let safe = escapeHtml(raw);
       termsLower.forEach((t) => {
         if (!t) return;
-        // case-insensitive replace via regex
         const re = new RegExp(t.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'), 'ig');
         safe = safe.replace(re, (m) => `<mark class="hl">${escapeHtml(m)}</mark>`);
       });
@@ -208,18 +196,13 @@
     items.forEach((el) => {
       const kwLower = el.getAttribute('data-keywords-lower') || '';
       const kwOriginal = el.getAttribute('data-keywords') || '';
-
       const ok = terms.length === 0 ? true : matchesAllTerms(kwLower);
 
       el.style.display = ok ? '' : 'none';
-
       if (ok) visible += 1;
 
-      // Highlight matches on visible items, reset on hidden as well (cheap)
       const kwNode = el.querySelector('.keywords-text');
-      if (kwNode) {
-        kwNode.innerHTML = highlightKeywordsText(kwOriginal, terms);
-      }
+      if (kwNode) kwNode.innerHTML = highlightKeywordsText(kwOriginal, terms);
     });
 
     visibleCountEl.textContent = String(visible);
@@ -228,8 +211,6 @@
   function commitTerm(raw) {
     const t = (raw || '').trim().toLowerCase();
     if (!t) return;
-
-    // Simple normalization: remove surrounding commas/spaces
     const normalized = t.replace(/^,+|,+$/g, '').trim();
     if (!normalized) return;
 
@@ -244,7 +225,6 @@
       commitTerm(input.value);
       input.value = '';
     } else if (e.key === 'Backspace' && input.value === '' && terms.length) {
-      // convenience: backspace with empty box removes last term
       terms.pop();
       renderChips();
       applyFilterAndHighlight();
@@ -258,7 +238,6 @@
     applyFilterAndHighlight();
   });
 
-  // Initial render
   renderChips();
   applyFilterAndHighlight();
 })();
