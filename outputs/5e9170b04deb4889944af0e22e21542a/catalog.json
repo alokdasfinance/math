@@ -1,0 +1,117 @@
+[
+  {
+    "start_page": 5,
+    "header": "Definition 2.1. A function f(x) = f(x1, . . . , xm) defined and continuously",
+    "image_file": "env_00001_p0005.png"
+  },
+  {
+    "start_page": 5,
+    "header": "Definition 2.2. A left (respectively right) monogenic homogeneous poly-",
+    "image_file": "env_00002_p0005.png"
+  },
+  {
+    "start_page": 6,
+    "header": "Lemma 2.3. We can see that",
+    "image_file": "env_00003_p0006.png"
+  },
+  {
+    "start_page": 6,
+    "header": "Lemma 2.4. [15] If Pk ∈M +",
+    "image_file": "env_00004_p0006.png"
+  },
+  {
+    "start_page": 6,
+    "header": "Definition 2.5. A real-valued polynomial Sk of degree k on Rm satisfying",
+    "image_file": "env_00005_p0006.png"
+  },
+  {
+    "start_page": 7,
+    "header": "Definition 2.6. For any f, g ∈L2(Rm, Cm), the operator linear operator",
+    "image_file": "env_00006_p0007.png"
+  },
+  {
+    "start_page": 7,
+    "header": "Definition 2.7. The linear operator T is compact, if {T(fn)} has a conver-",
+    "image_file": "env_00007_p0007.png"
+  },
+  {
+    "start_page": 8,
+    "header": "Theorem 2.8. The Fourier transform F extends to an isometry on L2(Rm, Cm),",
+    "image_file": "env_00008_p0008.png"
+  },
+  {
+    "start_page": 8,
+    "header": "Proposition 2.9. For any two monogenic, homogeneous polynomials Yk of",
+    "image_file": "env_00009_p0008.png"
+  },
+  {
+    "start_page": 8,
+    "header": "Lemma 2.10. Let f, g be defined on a neighbourhood Ωof the unit ball in",
+    "image_file": "env_00010_p0008.png"
+  },
+  {
+    "start_page": 8,
+    "header": "Lemma 2.11. Let ˆξ, ω ∈Sm-1, r > 0 and Yk ∈Hm",
+    "image_file": "env_00011_p0008.png"
+  },
+  {
+    "start_page": 9,
+    "header": "Definition 2.12. The Clifford-Legendre polynomial C0",
+    "image_file": "env_00012_p0009.png"
+  },
+  {
+    "start_page": 9,
+    "header": "Definition 2.13. Given c ≥0, the Clifford differential operator Lc acts of",
+    "image_file": "env_00013_p0009.png"
+  },
+  {
+    "start_page": 9,
+    "header": "Proposition 2.14. The operator Lc defined in (2.5) is self-adjoint.",
+    "image_file": "env_00014_p0009.png"
+  },
+  {
+    "start_page": 10,
+    "header": "Proposition 3.1. Let n be an even number and the real constants χk,0",
+    "image_file": "env_00015_p0010.png"
+  },
+  {
+    "start_page": 11,
+    "header": "Definition 3.2. For a positive real number c, we denote by H(α)",
+    "image_file": "env_00016_p0011.png"
+  },
+  {
+    "start_page": 11,
+    "header": "Proposition 3.3. Let c > 0 and k, m ∈N. Denote the even and odd Clifford",
+    "image_file": "env_00017_p0011.png"
+  },
+  {
+    "start_page": 13,
+    "header": "Remark 3.4. In the current proof, in fact, the odd version is the same as the",
+    "image_file": "env_00018_p0013.png"
+  },
+  {
+    "start_page": 14,
+    "header": "Remark 3.5. The last result is illustrated in the following figure, which shows",
+    "image_file": "env_00019_p0014.png"
+  },
+  {
+    "start_page": 15,
+    "header": "Lemma 4.1. The Fourier transform of Clifford PSWFs is given by",
+    "image_file": "env_00020_p0015.png"
+  },
+  {
+    "start_page": 15,
+    "header": "Lemma 4.2. Let c > 0 and let m, k be two positive integers such that c2 >",
+    "image_file": "env_00021_p0015.png"
+  },
+  {
+    "start_page": 15,
+    "header": "Theorem 4.3. Let c > 0. Let f be a c-band-limited Clifford-valued function",
+    "image_file": "env_00022_p0015.png"
+  },
+  {
+    "start_page": 18,
+    "header": "Remark 5.1. Using 150 Fourier–Bessel modes, the approximation error re-",
+    "image_file": "env_00023_p0018.png"
+  }
+]

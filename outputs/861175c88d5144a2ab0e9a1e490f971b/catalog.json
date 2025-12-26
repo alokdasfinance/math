@@ -1,0 +1,458 @@
+[
+  {
+    "page": 4,
+    "label": "Corollary",
+    "header": "corollary of Theorem 0.2, there are integers s and t such that",
+    "image_file": "p0004_00001_corollary.png"
+  },
+  {
+    "page": 24,
+    "label": "Theorem",
+    "header": "Theorem 4.4, there are φ(d) rotations of order d in Dn. If n is odd,",
+    "image_file": "p0024_00002_theorem.png"
+  },
+  {
+    "page": 29,
+    "label": "Theorem",
+    "header": "Theorem 4.3, every element in Zn has an order that is a divisor of n.",
+    "image_file": "p0029_00003_theorem.png"
+  },
+  {
+    "page": 29,
+    "label": "Theorem",
+    "header": "Theorem 4.1 and Theorem 4.3 we then have |x| divides both 2 and 15.",
+    "image_file": "p0029_00004_theorem.png"
+  },
+  {
+    "page": 31,
+    "label": "Example",
+    "header": "Example 4 that in A7 the possible orders are 1, 2, 3, 4, 5, 6, 7.",
+    "image_file": "p0031_00005_example.png"
+  },
+  {
+    "page": 34,
+    "label": "Theorem",
+    "header": "Theorem 5.2 shows that disjoint cycles commute. For the other half,",
+    "image_file": "p0034_00006_theorem.png"
+  },
+  {
+    "page": 37,
+    "label": "Theorem",
+    "header": "Theorem 6.3). If β is an isomorphism from G onto H, and α is an",
+    "image_file": "p0037_00007_theorem.png"
+  },
+  {
+    "page": 43,
+    "label": "Theorem",
+    "header": "Theorem 5.5, because the subgroup is merely isomorphic to An+2, not",
+    "image_file": "p0043_00008_theorem.png"
+  },
+  {
+    "page": 45,
+    "label": "Corollary",
+    "header": "Corollary 3 of Theorem 7.1. The case where |H ∩K| = 2p follows",
+    "image_file": "p0045_00009_corollary.png"
+  },
+  {
+    "page": 45,
+    "label": "Theorem",
+    "header": "Theorem 7.2 precludes more than 10.",
+    "image_file": "p0045_00010_theorem.png"
+  },
+  {
+    "page": 45,
+    "label": "Theorem",
+    "header": "Theorem 4.4, the number of elements of order 11 is a multiple of 10,",
+    "image_file": "p0045_00011_theorem.png"
+  },
+  {
+    "page": 48,
+    "label": "Example",
+    "header": "Example 7 of Chapter 3 and Theorem 7.2 that G cannot have more",
+    "image_file": "p0048_00012_example.png"
+  },
+  {
+    "page": 48,
+    "label": "Theorem",
+    "header": "Theorem. Lastly, we may assume that every non-identity element of G",
+    "image_file": "p0048_00013_theorem.png"
+  },
+  {
+    "page": 48,
+    "label": "Theorem",
+    "header": "Theorem of Cyclic Groups, it has an element of order q. So we may",
+    "image_file": "p0048_00014_theorem.png"
+  },
+  {
+    "page": 55,
+    "label": "Example",
+    "header": "Example 19 in Chapter 9.)",
+    "image_file": "p0055_00015_example.png"
+  },
+  {
+    "page": 57,
+    "label": "Theorem",
+    "header": "Theorem 4.4.)",
+    "image_file": "p0057_00016_theorem.png"
+  },
+  {
+    "page": 57,
+    "label": "Theorem",
+    "header": "Theorem 8.3 because 50 and 4 are not relatively prime.",
+    "image_file": "p0057_00017_theorem.png"
+  },
+  {
+    "page": 61,
+    "label": "Theorem",
+    "header": "Theorem 4.1.",
+    "image_file": "p0061_00018_theorem.png"
+  },
+  {
+    "page": 62,
+    "label": "Theorem",
+    "header": "Theorem 9.4, D13 is isomorphic to Inn(D13).",
+    "image_file": "p0062_00019_theorem.png"
+  },
+  {
+    "page": 62,
+    "label": "Theorem",
+    "header": "Theorem 7.1 and Theorem 9.7, H ∩K is Abelian.",
+    "image_file": "p0062_00020_theorem.png"
+  },
+  {
+    "page": 63,
+    "label": "Theorem",
+    "header": "Theorem 9.4, G/Z is cyclic and from Theorem 9.3 it follows that G is",
+    "image_file": "p0063_00021_theorem.png"
+  },
+  {
+    "page": 64,
+    "label": "Theorem",
+    "header": "Theorem 9.3 rules out Z10. If |G| = 2pq where p and q are distinct",
+    "image_file": "p0064_00022_theorem.png"
+  },
+  {
+    "page": 65,
+    "label": "Theorem",
+    "header": "Theorem 9.3 would imply that G = Z(G).",
+    "image_file": "p0065_00023_theorem.png"
+  },
+  {
+    "page": 69,
+    "label": "Theorem",
+    "header": "Theorem 10.3, |Ker φ| = 12 or 24. If |Ker φ| = 12 one possibility for",
+    "image_file": "p0069_00024_theorem.png"
+  },
+  {
+    "page": 71,
+    "label": "Theorem",
+    "header": "Theorem 8.3 that |U(st)/Us(st)| = |U(st)|/|Us(st)| =",
+    "image_file": "p0071_00025_theorem.png"
+  },
+  {
+    "page": 77,
+    "label": "Theorem",
+    "header": "Theorem 8.1 the order of any element",
+    "image_file": "p0077_00026_theorem.png"
+  },
+  {
+    "page": 77,
+    "label": "Theorem",
+    "header": "Theorem.",
+    "image_file": "p0077_00027_theorem.png"
+  },
+  {
+    "page": 78,
+    "label": "Theorem",
+    "header": "Theorem 8.1 Z2 ⊕Z2 ⊕Z2 ⊕Z2 has none, so these two groups are",
+    "image_file": "p0078_00028_theorem.png"
+  },
+  {
+    "page": 79,
+    "label": "Example",
+    "header": "example is the ring M2(Z) and the subgroup of all elements with the",
+    "image_file": "p0079_00029_example.png"
+  },
+  {
+    "page": 84,
+    "label": "Example",
+    "header": "Example 7, note that",
+    "image_file": "p0084_00030_example.png"
+  },
+  {
+    "page": 84,
+    "label": "Example",
+    "header": "Example 5",
+    "image_file": "p0084_00031_example.png"
+  },
+  {
+    "page": 87,
+    "label": "Theorem",
+    "header": "Theorem 9.5) R would have elements with additive orders p and q. So,",
+    "image_file": "p0087_00032_theorem.png"
+  },
+  {
+    "page": 87,
+    "label": "Corollary",
+    "header": "Corollary 2 of Theorem 7.1, |1| divides 2n. By Theorem 13.4, the",
+    "image_file": "p0087_00033_corollary.png"
+  },
+  {
+    "page": 89,
+    "label": "Corollary",
+    "header": "Corollary 2 of Theorem 4.1, we know that char R divides both 12 and",
+    "image_file": "p0089_00034_corollary.png"
+  },
+  {
+    "page": 95,
+    "label": "Example",
+    "header": "Example 11, we can show that i is not in I so these 8 elements are",
+    "image_file": "p0095_00035_example.png"
+  },
+  {
+    "page": 96,
+    "label": "Theorem",
+    "header": "theorem shows that (b -c)n+m ∈A. Also, (rb)n = rnbn ∈A.",
+    "image_file": "p0096_00036_theorem.png"
+  },
+  {
+    "page": 101,
+    "label": "Theorem",
+    "header": "Theorem 15.3.",
+    "image_file": "p0101_00037_theorem.png"
+  },
+  {
+    "page": 102,
+    "label": "Theorem",
+    "header": "Theorem 14.4 and the fact that Zn is a ﬁeld if and only if n is prime.",
+    "image_file": "p0102_00038_theorem.png"
+  },
+  {
+    "page": 104,
+    "label": "Example",
+    "header": "Example 2, the mapping φ from C to itself given by φ(a + bi) = a -bi",
+    "image_file": "p0104_00039_example.png"
+  },
+  {
+    "page": 110,
+    "label": "Theorem",
+    "header": "Theorem 16.5, I = ⟨x -1⟩.",
+    "image_file": "p0110_00040_theorem.png"
+  },
+  {
+    "page": 111,
+    "label": "Corollary",
+    "header": "Corollary 3 of Theorem 16.2.",
+    "image_file": "p0111_00041_corollary.png"
+  },
+  {
+    "page": 111,
+    "label": "Theorem",
+    "header": "Theorem 14.3 we have that nZ is a prime ideal of Z, and from",
+    "image_file": "p0111_00042_theorem.png"
+  },
+  {
+    "page": 111,
+    "label": "Example",
+    "header": "Example 14 in Chapter 14, we know that n is a prime.",
+    "image_file": "p0111_00043_example.png"
+  },
+  {
+    "page": 113,
+    "label": "Theorem",
+    "header": "Theorem 16.2) that f(p/q) = 0. Clearing fractions and collecting all",
+    "image_file": "p0113_00044_theorem.png"
+  },
+  {
+    "page": 116,
+    "label": "Corollary",
+    "header": "Corollary 2 of Theorem 17.5 that p(x) divides a1(x) or p(x) divides",
+    "image_file": "p0116_00045_corollary.png"
+  },
+  {
+    "page": 116,
+    "label": "Theorem",
+    "header": "Theorem 14.4, F[x]/⟨p(x)⟩is a ﬁeld with 0 + ⟨p(x)⟩= p(x) + ⟨p(x)⟩=",
+    "image_file": "p0116_00046_theorem.png"
+  },
+  {
+    "page": 121,
+    "label": "Lemma",
+    "header": "Lemma we know that p divides b or p divides c.",
+    "image_file": "p0121_00047_lemma.png"
+  },
+  {
+    "page": 122,
+    "label": "Theorem",
+    "header": "Theorem 18.1 shows that primes are irreducible. So, assume that a is",
+    "image_file": "p0122_00048_theorem.png"
+  },
+  {
+    "page": 125,
+    "label": "Theorem",
+    "header": "Theorem, 0 and 1 have multiplicity 1. Thus,",
+    "image_file": "p0125_00049_theorem.png"
+  },
+  {
+    "page": 126,
+    "label": "Theorem",
+    "header": "Theorem 19.5, xn -x and its derivative, which is -1 = 1, must have a",
+    "image_file": "p0126_00050_theorem.png"
+  },
+  {
+    "page": 132,
+    "label": "Theorem",
+    "header": "Theorem 20.5.",
+    "image_file": "p0132_00051_theorem.png"
+  },
+  {
+    "page": 135,
+    "label": "Theorem",
+    "header": "Theorem 21.4, F must also have subﬁelds of order p12, p3, p2 and p.",
+    "image_file": "p0135_00052_theorem.png"
+  },
+  {
+    "page": 135,
+    "label": "Theorem",
+    "header": "Theorem 22.3, m divides 3.",
+    "image_file": "p0135_00053_theorem.png"
+  },
+  {
+    "page": 135,
+    "label": "Theorem",
+    "header": "Theorem 21.1 we know that each of the nine elements of GF(9) are",
+    "image_file": "p0135_00054_theorem.png"
+  },
+  {
+    "page": 136,
+    "label": "Theorem",
+    "header": "Theorem 21.3 reduces the problem to constructing the subgroup",
+    "image_file": "p0136_00055_theorem.png"
+  },
+  {
+    "page": 137,
+    "label": "Theorem",
+    "header": "Theorem 4.4), we have a62 = -1.",
+    "image_file": "p0137_00056_theorem.png"
+  },
+  {
+    "page": 137,
+    "label": "Corollary",
+    "header": "Corollary 2 of Theorem 21.2, GF(pd) has the form GF(p)(a) for some",
+    "image_file": "p0137_00057_corollary.png"
+  },
+  {
+    "page": 138,
+    "label": "Theorem",
+    "header": "Theorem 21.5, the monic irreducible factors of x35 -x have degrees 1",
+    "image_file": "p0138_00058_theorem.png"
+  },
+  {
+    "page": 142,
+    "label": "Theorem",
+    "header": "Theorem 23.5.",
+    "image_file": "p0142_00059_theorem.png"
+  },
+  {
+    "page": 143,
+    "label": "Theorem",
+    "header": "Theorem, n5 = 1. Thus, we may form a cyclic subgroup of order 85",
+    "image_file": "p0143_00060_theorem.png"
+  },
+  {
+    "page": 144,
+    "label": "Theorem",
+    "header": "Theorem 23.6 shows G/N has normal subgroups of orders 3, 5,",
+    "image_file": "p0144_00061_theorem.png"
+  },
+  {
+    "page": 145,
+    "label": "Theorem",
+    "header": "Theorem 23.5. Otherwise, let H and K be distinct Sylow 2-subgroups.",
+    "image_file": "p0145_00062_theorem.png"
+  },
+  {
+    "page": 145,
+    "label": "Theorem",
+    "header": "Theorem 23.5 and Exercise 44 we know that each Sp is normal in G",
+    "image_file": "p0145_00063_theorem.png"
+  },
+  {
+    "page": 145,
+    "label": "Theorem",
+    "header": "Theorem 7.2, |⟨xhx-1⟩H| = |⟨xhx-1⟩||H|/|⟨xHx-1⟩∩H|. Since",
+    "image_file": "p0145_00064_theorem.png"
+  },
+  {
+    "page": 146,
+    "label": "Theorem",
+    "header": "Theorem 23.2). So, G = H × K ≈H ⊕K and, from Exercise 4 of",
+    "image_file": "p0146_00065_theorem.png"
+  },
+  {
+    "page": 148,
+    "label": "Theorem",
+    "header": "Theorem (Corollary 2 of Theorem 24.3), G is isomorphic to a",
+    "image_file": "p0148_00066_theorem.png"
+  },
+  {
+    "page": 148,
+    "label": "Example",
+    "header": "Example 17 of Chapter 10, |N(L11)/C(L11)| divides |Aut(Z11)| = 10,",
+    "image_file": "p0148_00067_example.png"
+  },
+  {
+    "page": 149,
+    "label": "Theorem",
+    "header": "Theorem that An+1 is isomorphic to a subgroup of An, which is",
+    "image_file": "p0149_00068_theorem.png"
+  },
+  {
+    "page": 149,
+    "label": "Theorem",
+    "header": "Theorem 23.2 handles the case where p = q = r. The Sylow Test for",
+    "image_file": "p0149_00069_theorem.png"
+  },
+  {
+    "page": 150,
+    "label": "Theorem",
+    "header": "theorem, G is isomorphic to a subgroup of order 120 in A6. This",
+    "image_file": "p0150_00070_theorem.png"
+  },
+  {
+    "page": 150,
+    "label": "Corollary",
+    "header": "Corollary 1 of Theorem 24.3, we have |N(L3| = 6 and |N(L5)| = 10.",
+    "image_file": "p0150_00071_corollary.png"
+  },
+  {
+    "page": 151,
+    "label": "Theorem",
+    "header": "Theorem.",
+    "image_file": "p0151_00072_theorem.png"
+  },
+  {
+    "page": 151,
+    "label": "Theorem",
+    "header": "Theorem implies n2 ̸= 5. Thus, n2 = 15. If every pair of Sylow",
+    "image_file": "p0151_00073_theorem.png"
+  },
+  {
+    "page": 161,
+    "label": "Example",
+    "header": "example, if the rotation R2·360/11 ﬁxes a coloring, then once we choose",
+    "image_file": "p0161_00074_example.png"
+  },
+  {
+    "page": 166,
+    "label": "Proof",
+    "header": "proof for Theorem 29.2.)",
+    "image_file": "p0166_00075_proof.png"
+  },
+  {
+    "page": 173,
+    "label": "Theorem",
+    "header": "Theorem 31.1.",
+    "image_file": "p0173_00076_theorem.png"
+  }
+]

@@ -1,0 +1,117 @@
+[
+  {
+    "start_page": 5,
+    "header": "function, defined, continuously, x1, xm, definition, rm, cm, differentiable, open, region, taking, values, said, left, monogenic, xf, pm, dirac, operator, partial, differ, ej, xj, define, euler, differential, ential, laplace, factorized, follows, notion, right, monogenicity, similarly, letting, valued, act, fa, ea, qm, each, takes, complex, fact, clifford, conjugate",
+    "image_file": "env_00001_p0005.png"
+  },
+  {
+    "start_page": 5,
+    "header": "left, respectively, right, monogenic, homogeneous, poly, definition, rm, nomial, degree, called, pk, solid, inner, spherical, order, set, all, denoted, can, shown, dimension, dim, dk, function, qk, outer",
+    "image_file": "env_00002_p0005.png"
+  },
+  {
+    "start_page": 6,
+    "header": "lemma, can, see, note, pk, ml, mpk, qk",
+    "image_file": "env_00003_p0006.png"
+  },
+  {
+    "start_page": 6,
+    "header": "pk, lemma, sxs, 1pk, even, xspk, xs, 2k, odd",
+    "image_file": "env_00004_p0006.png"
+  },
+  {
+    "start_page": 6,
+    "header": "rm, real, valued, polynomial, degree, satisfying, sk, definition, tksk, msk, tx, called, solid, spherical, harmonic, collection, spher, ical, harmonics, denoted, since, have, unitary, right, clifford, module, abelian, group, cm, law, scalar, multiplication, hr, defined, all, ii, iii, iv, fe, ce, note, becomes, complex, vector, space, identified, function, said, inner, product, one, can, recover, putting, each, norm, turning, normed, provided, hilbert",
+    "image_file": "env_00005_p0006.png"
+  },
+  {
+    "start_page": 7,
+    "header": "l2, rm, cm, any, operator, linear, definition, self, adjoint, tf, tg",
+    "image_file": "env_00006_p0007.png"
+  },
+  {
+    "start_page": 7,
+    "header": "linear, operator, compact, has, conver, fn, definition, l2, rm, cm, gent, subsequence, every, bounded, sequence",
+    "image_file": "env_00007_p0007.png"
+  },
+  {
+    "start_page": 8,
+    "header": "l2, rm, cm, theorem, fourier, transform, extends, isometry, all, parseval, formula, holds, ff, fg, particular, each, one, has",
+    "image_file": "env_00008_p0008.png"
+  },
+  {
+    "start_page": 8,
+    "header": "yk, proposition, any, two, monogenic, homogeneous, polynomials, yl, degree, have, l2, sm, following, result, may, obtained, simple, application, clifford, stokes, theorem",
+    "image_file": "env_00009_p0008.png"
+  },
+  {
+    "start_page": 8,
+    "header": "lemma, defined, neighbourhood, unit, ball, rm, while, suppose, right, monogenic, left, sm, following, well, known, result, appears, corollary, funk, hecke, theorem",
+    "image_file": "env_00010_p0008.png"
+  },
+  {
+    "start_page": 8,
+    "header": "sm, hm, yk, lemma, ir, jk, bessel, function, first, kind, consequence, have, all, dx, rm, closed, ball, radius, centre",
+    "image_file": "env_00011_p0008.png"
+  },
+  {
+    "start_page": 9,
+    "header": "c0, clifford, legendre, polynomial, can, de, yk, definition, fined, nyk, denote, normalized, so, their, norm, equal, 2k, 2n, hk, 2nn, order, homogeneity, degree, dimension, written, following, form, n22n, 122n, jacobi, polynomials, dn, dxn",
+    "image_file": "env_00012_p0009.png"
+  },
+  {
+    "start_page": 9,
+    "header": "clifford, differential, operator, acts, lc, definition, rm, c2, follows, xf, 2c2, 2f, lcf, unit, ball, dirac, define, prolate, spheroidal, wave, functions, cpswfs, eigenfunctions",
+    "image_file": "env_00013_p0009.png"
+  },
+  {
+    "start_page": 9,
+    "header": "lc, proposition, operator, defined, self, adjoint, cpswfs, equivalently, eigenfunc, consequence, tions, finite, fourier, transformation, gc, so, have, e2, ic, dy, estimation, eigenvalues, section, devoted, proving, several, key, results, essen, tial, our, proof, development, function, prolate, basis, first, provide, upper, lower, bound, corresponding, differential",
+    "image_file": "env_00014_p0009.png"
+  },
+  {
+    "start_page": 10,
+    "header": "proposition, even, number, real, constants, c0, lc, have, 2c2, 2k",
+    "image_file": "env_00015_p0010.png"
+  },
+  {
+    "start_page": 11,
+    "header": "finite, positive, real, number, denote, definition, hankel, transform, cxyj, cxy, dy, eigenfunction, associated, eigenvalue",
+    "image_file": "env_00016_p0011.png"
+  },
+  {
+    "start_page": 11,
+    "header": "proposition, denote, even, odd, clifford, prolate, spheroidal, wave, functions, cpswfs, qk, 2n, yk, spherical, monogenic, degree, r2",
+    "image_file": "env_00017_p0011.png"
+  },
+  {
+    "start_page": 13,
+    "header": "current, proof, fact, odd, version, same, remark, even, reason, any, spherical, monogenic, yk, harmonic, degree, xyk, using, result, last, proposition, together, consequence, orems, one, gets, following, estimates, eigenvalues, associated, clifford, finite, fourier, transform, 2n, ck, cm, ec, 4n, 2k",
+    "image_file": "env_00018_p0013.png"
+  },
+  {
+    "start_page": 14,
+    "header": "last, result, illustrated, following, figure, shows, remark, behavior, eigenvalues, consists, three, parts, first, close, second, plunge, region, not, studied, paper, exhibit, super, exponential, decay, ec, beyond, visibly, value, optimal, figures, represent, graph, different, values, changes, dimension, cpswfs, expansion, clifford, pswfs, section, aims, study, quality, approximation, frame, work, dimensional, prolate, spheroidal, wave, function, series, denote, fourier, transform, dy, rm, using, one",
+    "image_file": "env_00019_p0014.png"
+  },
+  {
+    "start_page": 15,
+    "header": "lemma, fourier, transform, clifford, pswfs, cd",
+    "image_file": "env_00020_p0015.png"
+  },
+  {
+    "start_page": 15,
+    "header": "c2, lemma, two, positive, integers, n0, integer, all, one, has, 2n, previous, simple, reproduction, theorem, together",
+    "image_file": "env_00021_p0015.png"
+  },
+  {
+    "start_page": 15,
+    "header": "band, limited, theorem, clifford, valued, function, cm, l2, integers, define, partial, cpswf, expansion, dk, dim, denotes, orthonormal, basis, constant, depending, ec, all, every, 2n, 4n, 2k",
+    "image_file": "env_00022_p0015.png"
+  },
+  {
+    "start_page": 18,
+    "header": "using, fourier, bessel, modes, approximation, error, re, remark, mains, order, highlighting, efficiency, cpswf, basis, band, limited, signals, example, consider, function, j1, cr, j0, e1, r2, combines, radial, behaviour, angular, monogenic, compo, nent, goal, evaluate, quality, reconstruction, non, scalar, clifford, valued, 2d, well, known, transform, iden, tified, hankel, zero, rdr, h0, recall, following, two, key, identities, ar, k0, cos, zt, modified",
+    "image_file": "env_00023_p0018.png"
+  }
+]

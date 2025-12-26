@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Saved Items</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body { font-family: system-ui, Arial, sans-serif; margin:24px; color:#111; }
+    .topbar { display:flex; justify-content:space-between; flex-wrap:wrap; gap:12px; align-items:flex-start; }
+    .row { border:1px solid #e5e5e5; border-radius:12px; padding:12px; display:grid; grid-template-columns:1fr 2fr; gap:12px; margin-top:14px; }
+    .btn { padding:8px 12px; border-radius:8px; border:1px solid #ccc; background:#fff; cursor:pointer; text-decoration:none; color:#111; }
+    .btn-danger { border-color:#ef4444; color:#b91c1c; }
+    .meta { font-size:12px; color:#666; margin-bottom:6px; }
+    .kw { font-size:13px; line-height:1.35; word-break: break-word; }
+    img { max-width:100%; border-radius:10px; border:1px solid #eee; }
+    .actions { display:flex; gap:8px; flex-wrap:wrap; align-items:center; }
+
+    /* Search UI */
+    .search-card {
+      border:1px solid #e5e5e5; border-radius:12px; padding:12px; margin-top:12px;
+      display:flex; flex-direction:column; gap:10px;
+    }
+    .search-row { display:flex; gap:10px; flex-wrap:wrap; align-items:center; }
+    .search-input {
+      flex: 1;
+      min-width: 220px;
+      padding: 10px 12px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      outline: none;
+      font-size: 14px;
+    }
+    .chipbar { display:flex; gap:8px; flex-wrap:wrap; }
+    .chip {
+      display:inline-flex; align-items:center; gap:8px;
+      border:1px solid #e5e7eb;
+      background:#f3f4f6;
+      padding: 6px 10px;
+      border-radius: 999px;
+      font-size: 13px;
+      color:#111;
+    }
+    .chip button {
+      border:none; background:transparent; cursor:pointer; padding:0;
+      color:#666; font-size: 16px; line-height: 1;
+    }
+    .chip button:hover { color:#111; }
+
+    .hint { font-size: 13px; color:#666; }
+    .count { font-size: 13px; color:#666; }
+
+    /* Highlight matches inside keyword list */
+    mark.hl {
+      background: #fff7ed;
+      border: 1px solid #fed7aa;
+      color: #9a3412;
+      padding: 0 3px;
+      border-radius: 6px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="topbar">
+  <div>
+    <h1 style="margin:0;">Saved Items</h1>
+    <div class="meta">Total saved: <span id="totalSaved">{{ total }}</span></div>
+  </div>
+  <div class="actions">
+    <a class="btn" href="{{ url_for('index') }}">New Upload</a>
+  </div>
+</div>
+
+<div class="search-card">
+  <div class="search-row">
+    <input
+      id="searchInput"
+      class="search-input"
+      type="text"
+      placeholder="Type a keyword, press Enter to add filter…"
+      autocomplete="off"
+    >
+    <button id="clearAllBtn" class="btn" type="button">Clear filters</button>
+  </div>
+
+  <div class="chipbar" id="chipBar"></div>
+
+  <div class="search-row" style="justify-content: space-between;">
+    <div class="hint">
+      Press Enter to add a filter term. Add multiple terms to narrow results (AND logic).
+    </div>
+    <div class="count">
+      Showing <span id="visibleCount">0</span> / <span id="savedCount">{{ total }}</span>
+    </div>
+  </div>
+</div>
+
+{% if total == 0 %}
+  <p class="meta" style="margin-top: 14px;">No saved items yet.</p>
+{% endif %}
+
+<div id="savedList">
+  {% for hit in hits %}
+    <div
+      class="row saved-item"
+      data-keywords="{{ hit.header | e }}"
+      data-keywords-lower="{{ hit.header | lower | e }}"
+    >
+      <div>
+        <div class="meta">Page {{ hit.start_page }}</div>
+
+        <!-- We render original keywords into this span; JS will rewrite with highlight markup -->
+        <div class="kw keywords-text">{{ hit.header }}</div>
+
+        <form action="{{ url_for('unsave', saved_id=hit.saved_id) }}" method="post">
+          <button class="btn btn-danger" type="submit">Unsave</button>
+        </form>
+      </div>
+
+      <div>
+        <img src="{{ url_for('serve_saved_img', filename=hit.image_file) }}">
+        <div class="meta">{{ hit.image_file }}</div>
+      </div>
+    </div>
+  {% endfor %}
+</div>
+
+<script>
+(function () {
+  const input = document.getElementById('searchInput');
+  const chipBar = document.getElementById('chipBar');
+  const clearAllBtn = document.getElementById('clearAllBtn');
+  const items = Array.from(document.querySelectorAll('.saved-item'));
+  const visibleCountEl = document.getElementById('visibleCount');
+
+  // Active search terms (lowercase)
+  let terms = [];
+
+  function escapeHtml(s) {
+    return s.replace(/[&<>"']/g, (c) => ({
+      '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;'
+    })[c]);
+  }
+
+  function uniqPush(arr, v) {
+    if (!arr.includes(v)) arr.push(v);
+  }
+
+  function renderChips() {
+    chipBar.innerHTML = '';
+    terms.forEach((t) => {
+      const chip = document.createElement('span');
+      chip.className = 'chip';
+      chip.innerHTML = `
+        <span>${escapeHtml(t)}</span>
+        <button type="button" aria-label="Remove filter">&times;</button>
+      `;
+      chip.querySelector('button').addEventListener('click', () => {
+        terms = terms.filter(x => x !== t);
+        applyFilterAndHighlight();
+        renderChips();
+      });
+      chipBar.appendChild(chip);
+    });
+  }
+
+  function highlightKeywordsText(original, termsLower) {
+    // Highlight whole tokens inside the comma-separated keyword string.
+    // We do a conservative token-based highlight to avoid weird partial HTML issues.
+    if (!termsLower.length) return escapeHtml(original);
+
+    // Split on commas, keep delimiters for reconstruction
+    const parts = original.split(',');
+    const out = parts.map((p) => {
+      const raw = p;            // includes leading space possibly
+      const trimmed = raw.trim();
+      const lower = trimmed.toLowerCase();
+
+      // If this token exactly equals any term, highlight it
+      if (termsLower.includes(lower)) {
+        // preserve original spacing around token: we reconstruct as " <mark>token</mark>"
+        const leadSpace = raw.startsWith(' ') ? ' ' : '';
+        return leadSpace + `<mark class="hl">${escapeHtml(trimmed)}</mark>`;
+      }
+
+      // Otherwise, do substring highlight when term appears inside this token (still safe)
+      // Example: searching "group" highlights "subgroup"
+      let safe = escapeHtml(raw);
+      termsLower.forEach((t) => {
+        if (!t) return;
+        // case-insensitive replace via regex
+        const re = new RegExp(t.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'), 'ig');
+        safe = safe.replace(re, (m) => `<mark class="hl">${escapeHtml(m)}</mark>`);
+      });
+      return safe;
+    });
+
+    return out.join(',');
+  }
+
+  function matchesAllTerms(keywordsLower) {
+    return terms.every((t) => keywordsLower.includes(t));
+  }
+
+  function applyFilterAndHighlight() {
+    let visible = 0;
+
+    items.forEach((el) => {
+      const kwLower = el.getAttribute('data-keywords-lower') || '';
+      const kwOriginal = el.getAttribute('data-keywords') || '';
+
+      const ok = terms.length === 0 ? true : matchesAllTerms(kwLower);
+
+      el.style.display = ok ? '' : 'none';
+
+      if (ok) visible += 1;
+
+      // Highlight matches on visible items, reset on hidden as well (cheap)
+      const kwNode = el.querySelector('.keywords-text');
+      if (kwNode) {
+        kwNode.innerHTML = highlightKeywordsText(kwOriginal, terms);
+      }
+    });
+
+    visibleCountEl.textContent = String(visible);
+  }
+
+  function commitTerm(raw) {
+    const t = (raw || '').trim().toLowerCase();
+    if (!t) return;
+
+    // Simple normalization: remove surrounding commas/spaces
+    const normalized = t.replace(/^,+|,+$/g, '').trim();
+    if (!normalized) return;
+
+    uniqPush(terms, normalized);
+    renderChips();
+    applyFilterAndHighlight();
+  }
+
+  input.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter') {
+      e.preventDefault();
+      commitTerm(input.value);
+      input.value = '';
+    } else if (e.key === 'Backspace' && input.value === '' && terms.length) {
+      // convenience: backspace with empty box removes last term
+      terms.pop();
+      renderChips();
+      applyFilterAndHighlight();
+    }
+  });
+
+  clearAllBtn.addEventListener('click', () => {
+    terms = [];
+    input.value = '';
+    renderChips();
+    applyFilterAndHighlight();
+  });
+
+  // Initial render
+  renderChips();
+  applyFilterAndHighlight();
+})();
+</script>
+
+</body>
+</html>

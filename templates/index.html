@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>PDF Theorem / Definition Extractor</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body { font-family: system-ui, Arial, sans-serif; margin: 24px; color:#111; }
+    .card { border:1px solid #e5e5e5; border-radius:12px; padding:16px; max-width:820px; }
+    .row { display:flex; gap:12px; flex-wrap:wrap; align-items:center; }
+    .btn { padding:10px 14px; border-radius:8px; border:1px solid #ccc; background:#fff; cursor:pointer; text-decoration:none; color:#111; }
+    .btn-primary { background:#111; color:#fff; border-color:#111; }
+    .muted { color:#666; font-size:14px; }
+    input[type=file] { padding:6px; }
+    .flash { margin-bottom:12px; padding:10px; border-radius:8px; background:#fff7ed; border:1px solid #fed7aa; color:#9a3412; }
+  </style>
+</head>
+<body>
+
+<h1>PDF Theorem / Definition Extractor</h1>
+<p class="muted">
+  Upload a PDF. The app extracts theorem-like blocks (theorem, lemma, definition, etc.)
+  and lets you save them permanently.
+</p>
+
+{% with messages = get_flashed_messages() %}
+  {% for m in messages %}
+    <div class="flash">{{ m }}</div>
+  {% endfor %}
+{% endwith %}
+
+<div class="card">
+  <form action="{{ url_for('upload') }}" method="post" enctype="multipart/form-data">
+    <div class="row">
+      <div>
+        <label>PDF file</label><br>
+        <input type="file" name="file" accept="application/pdf" required>
+      </div>
+
+      <div style="margin-top:18px;">
+        <button class="btn btn-primary" type="submit">Extract</button>
+      </div>
+
+      <div style="margin-top:18px;">
+        <a class="btn" href="{{ saved_url }}">View Saved ({{ saved_count }})</a>
+      </div>
+    </div>
+  </form>
+</div>
+
+</body>
+</html>
